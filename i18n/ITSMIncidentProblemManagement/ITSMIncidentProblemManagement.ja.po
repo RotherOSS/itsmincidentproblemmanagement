@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMIncidentProblemManagement\n"
 "POT-Creation-Date: 2019-06-25 12:26+0000\n"
-"PO-Revision-Date: 2024-11-29 04:34+0000\n"
+"PO-Revision-Date: 2024-11-29 06:34+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://weblate.otobo.org/projects/opm-packages/"
 "itsm-incidentproblemmanagement/ja/>\n"
@@ -442,15 +442,15 @@ msgstr "Git がリポジトリをキャッシュするために使用するデ�
 
 #. SysConfig
 msgid "Directory, which is used by Git to store temporary data."
-msgstr ""
+msgstr "Git が一時データを保存するために使用するディレクトリ。"
 
 #. SysConfig
 msgid "Directory, which is used by Git to store working copies."
-msgstr ""
+msgstr "Git が作業コピーを保存するために使用するディレクトリ。"
 
 #. SysConfig
 msgid "Disable online repositories."
-msgstr ""
+msgstr "オンラインリポジトリを無効にします。"
 
 #. SysConfig
 msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
@@ -459,47 +459,52 @@ msgstr "これらのユーザーの git ssh "
 
 #. SysConfig
 msgid "Dynamic Fields Screens"
-msgstr ""
+msgstr "ダイナミックフィールド画面"
 
 #. SysConfig
 msgid "DynamicFieldScreen"
-msgstr ""
+msgstr "ダイナミックフィールドスクリーン"
 
 #. SysConfig
 msgid "Export all available public keys to authorized_keys file."
-msgstr ""
+msgstr "利用可能なすべての公開鍵を authorized_keys ファイルにエクスポートします。"
 
 #. SysConfig
 msgid "Export all relevant releases to ftp server."
-msgstr ""
+msgstr "関連するすべてのリリースを FTP サーバーにエクスポートします。"
 
 #. SysConfig
 msgid "Frontend module registration for the OPMS object in the agent interface."
-msgstr ""
+msgstr "担当者Webインターフェイス内の OPMS オブジェクトのフロントエンド "
+"モジュール登録。"
 
 #. SysConfig
 msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスの PublicOPMSRepository オブジェクトのフロントエンド "
+"モジュール登録。"
 
 #. SysConfig
 msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスの PublicOPMSRepositoryLookup "
+"オブジェクトのフロントエンド モジュール登録。"
 
 #. SysConfig
 msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
-msgstr ""
+msgstr "一般Webインターフェイスの PublicOPMSTestBuild オブジェクトのフロントエンド "
+"モジュール登録。"
 
 #. SysConfig
 msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
-msgstr ""
+msgstr "Webインターフェイスの PublicPackageVerification オブジェクトのフロントエンド "
+"モジュール登録。"
 
 #. SysConfig
 msgid "Frontend module registration for the admin interface."
-msgstr ""
+msgstr "管理インターフェースのフロントエンド モジュールの登録。"
 
 #. SysConfig
 msgid "GIT Author registration."
-msgstr ""
+msgstr "GIT Author 登録。"
 
 #. SysConfig
 msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
@@ -508,23 +513,23 @@ msgstr "指定されたブロックの HTML コメント "
 
 #. SysConfig
 msgid "Generate documentations once per night."
-msgstr ""
+msgstr "毎晩 1 回ドキュメントを生成します。"
 
 #. SysConfig
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #. SysConfig
 msgid "Git Management"
-msgstr ""
+msgstr "Git管理"
 
 #. SysConfig
 msgid "Git Repository"
-msgstr ""
+msgstr "Gitリポジトリ"
 
 #. SysConfig
 msgid "Group, whose members have delete admin permissions in OPMS."
-msgstr ""
+msgstr "OPMS で削除管理者権限を持つメンバーがいるグループ。"
 
 #. SysConfig
 msgid "Group, whose members have repository admin permissions in OPMS."
@@ -532,188 +537,250 @@ msgstr "メンバーが OPMS のリポジトリ管理者権限を持つグルー
 
 #. SysConfig
 msgid "Group, whose members will see CI test result information in OPMS screens."
-msgstr ""
+msgstr "グループのメンバーは OPMS 画面で CI テスト結果情報を確認できます。"
 
 #. SysConfig
 msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
 msgstr ""
+"一般Webインターフェイス経由でテスト パッケージをビルドするには、"
+"認証されたユーザー (ユーザー ログインとパスワードによって) "
+"がメンバーになっている必要があるグループ。"
 
 #. SysConfig
 msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
-msgstr ""
+msgstr "OPMS リポジトリを追加する際の Git "
+"プロジェクト作成プロセス中に設定されるグループ。"
 
 #. SysConfig
 msgid "Manage dynamic field in screens."
-msgstr ""
+msgstr "画面内のダイナミックフィールドを管理します。"
 
 #. SysConfig
 msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
-msgstr ""
+msgstr "ここで、Git アクセス用の公開 SSH キーを管理します。新しいキーを追加するときは"
+"、必ずこの設定を保存してください。"
 
 #. SysConfig
 msgid "Module to generate statistics about the added code lines."
-msgstr ""
+msgstr "追加されたコード行に関する統計を生成するモジュール。"
 
 #. SysConfig
 msgid "Module to generate statistics about the growth of code."
-msgstr ""
+msgstr "コードの増加に関する統計を生成するモジュール。"
 
 #. SysConfig
 msgid "Module to generate statistics about the number of git commits."
-msgstr ""
+msgstr "Git コミットの数に関する統計を生成するモジュール。"
 
 #. SysConfig
 msgid "Module to generate statistics about the removed code lines."
-msgstr ""
+msgstr "削除されたコード行に関する統計を生成するモジュール。"
 
 #. SysConfig
 msgid "OPMS"
-msgstr ""
+msgstr "OPMS"
 
 #. SysConfig
 msgid "Only users who have rw permissions in one of these groups may access git."
-msgstr ""
+msgstr "これらのグループのいずれかで rw 権限を持つユーザーのみが git "
+"にアクセスできます。"
 
 #. SysConfig
 msgid "Option to set a package compatibility manually."
-msgstr ""
+msgstr "パッケージの互換性を手動で設定するオプション。"
 
 #. SysConfig
 msgid "Parameters for the pages in the BranchView screen."
-msgstr ""
+msgstr "BranchView 画面のページのパラメータ。"
 
 #. SysConfig
 msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"'GITProjectName' ダイナミックフィールドの事前定義: Group "
+"=>ダイナミックフィールドにアクセスできるグループ。AlwaysVisible => "
+"フィールドを削除できます (0|1)。InformationAreaName => ウィジェットの名前。"
+"InformationAreaSize => ウィジェットのサイズと位置 (大|小)。Name => "
+"使用する動的フィールドの名前。Priority => ダイナミックフィールドの順序。"
+"State => フィールドの状態 (0 = 無効、1 = アクティブ、2 = 必須)。"
+"FilterRepository => 表示するためにリポジトリ名が一致する必要がある正規表現。"
+"FilterPackage => 表示するためにパッケージ名が一致する必要がある正規表現。"
+"FilterBranch => 表示するためにブランチ名が一致する必要がある正規表現。"
+"FilterRelease => "
+"表示するために拒否バージョン文字列が一致する必要がある正規表現。"
 
 #. SysConfig
 msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"'GITRepositoryName' ダイナミックフィールドの事前定義: Group => "
+"ダイナミックフィールドにアクセスできるグループ。AlwaysVisible => "
+"フィールドを削除できます (0|1)。InformationAreaName => ウィジェットの名前。"
+"InformationAreaSize => ウィジェットのサイズと位置 (大|小)。Name => "
+"使用するダイナミックフィールドの名前。Priority => "
+"ダイナミックフィールドの順序。State => フィールドの状態 (0 = 無効、1 = "
+"アクティブ、2 = 必須)。FilterRepository => "
+"表示するためにリポジトリ名が一致する必要がある正規表現。FilterPackage => "
+"表示するためにパッケージ名が一致する必要がある正規表現。FilterBranch => "
+"表示するためにブランチ名が一致する必要がある正規表現。FilterRelease => "
+"表示するために拒否バージョン文字列が一致する必要がある正規表現。"
 
 #. SysConfig
 msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
 msgstr ""
+"'PackageDeprecated' ダイナミックフィールドの事前定義: Group => "
+"ダイナミックフィールドにアクセスできるグループ。AlwaysVisible => "
+"フィールドを削除できます (0|1)。InformationAreaName => ウィジェットの名前。"
+"InformationAreaSize => ウィジェットのサイズと位置 (大|小)。Name => "
+"使用するダイナミックフィールドの名前。Priority => "
+"ダイナミックフィールドの順序。State => フィールドの状態 (0 = 無効、1 = "
+"アクティブ、2 = 必須)。FilterRepository => "
+"表示するためにリポジトリ名が一致する必要がある正規表現。FilterPackage => "
+"表示するためにパッケージ名が一致する必要がある正規表現。FilterBranch => "
+"表示するためにブランチ名が一致する必要がある正規表現。FilterRelease => "
+"表示するために拒否バージョン文字列が一致する必要がある正規表現。"
 
 #. SysConfig
 msgid "Recipients that will be informed by email in case of errors."
-msgstr ""
+msgstr "エラーが発生した場合に電子メールで通知される受信者。"
 
 #. SysConfig
 msgid "SSH Keys for Git Access"
-msgstr ""
+msgstr "Git アクセス用の SSH キー"
 
 #. SysConfig
 msgid "Send analysis file"
-msgstr ""
+msgstr "分析ファイルを送信"
 
 #. SysConfig
 msgid "Sets the git clone address to be used in repository listings."
-msgstr ""
+msgstr "リポジトリ リストで使用する Git クローン アドレスを設定します。"
 
 #. SysConfig
 msgid "Sets the home directory for git repositories."
-msgstr ""
+msgstr "Git リポジトリのホーム ディレクトリを設定します。"
 
 #. SysConfig
 msgid "Sets the path for the BugzillaAddComment post receive script location."
-msgstr ""
+msgstr "BugzillaAddComment 投稿受信スクリプトの場所へのパスを設定します。"
 
 #. SysConfig
 msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
 msgstr ""
+"OTRSCodePolicy スクリプトの場所のパスを設定します。cron 経由で更新される "
+"OTRSCodePolicy モジュールの別のクローンを用意することをお勧めします。"
 
 #. SysConfig
 msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
 msgstr ""
+"OTRSCodePolicy 事前受信スクリプトの場所へのパスを設定します。cron "
+"経由で更新される OTRSCodePolicy "
+"モジュールの別のクローンを用意することをお勧めします。"
 
 #. SysConfig
 msgid "Show latest commits in git repositories."
-msgstr ""
+msgstr "Git リポジトリ内の最新のコミットを表示します。"
 
 #. SysConfig
 msgid "Shows a link in the menu to go create a unit test from the current ticket."
-msgstr ""
+msgstr "現在のチケットから単体テストを作成するためのリンクをメニューに表示します。"
 
 #. SysConfig
 msgid "Synchronize OPMS tables with a remote database."
-msgstr ""
+msgstr "OPMS テーブルをリモート データベースと同期します。"
 
 #. SysConfig
 msgid "The minimum version of the sphinx library."
-msgstr ""
+msgstr "Sphinx ライブラリの最小バージョン。"
 
 #. SysConfig
 msgid "The name of the sphinx theme to be used."
-msgstr ""
+msgstr "使用するスフィンクス テーマの名前。"
 
 #. SysConfig
 msgid "The path to the OTRS CSS file (relative below the static path)."
-msgstr ""
+msgstr "OTRS CSS ファイルへのパス (静的パスの下の相対パス)。"
 
 #. SysConfig
 msgid "The path to the OTRS logo (relative below the static path)."
-msgstr ""
+msgstr "OTRS ロゴへのパス (静的パスより下の相対パス)。"
 
 #. SysConfig
 msgid "The path to the static folder, containing images and css files."
-msgstr ""
+msgstr "画像と CSS ファイルを含む静的フォルダーへのパス。"
 
 #. SysConfig
 msgid "The path to the theme folder, containing the sphinx themes."
-msgstr ""
+msgstr "Sphinx テーマを含むテーマ フォルダーへのパス。"
 
 #. SysConfig
 msgid "This configuration defines all possible screens to enable or disable default columns."
-msgstr ""
+msgstr "この構成では、デフォルトの列を有効または無効にするためのすべての可能な画面を"
+"定義します。"
 
 #. SysConfig
 msgid "This configuration defines all possible screens to enable or disable dynamic fields."
-msgstr ""
+msgstr "この構成では、ダイナミックフィールドを有効または無効にするためのすべての可能"
+"な画面を定義します。"
 
 #. SysConfig
 msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
-msgstr ""
+msgstr "この構成は、有効な動的フィールドのみを表示するか、すべての（無効な）ダイナミ"
+"ックフィールドを表示するかを定義します。"
 
 #. SysConfig
 msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
 msgstr ""
+"この設定は、OTRS パッケージ検証を有効にするか無効にするかを定義します。無効に"
+"すると、すべてのパッケージが検証済みとして表示されます。検証済みのパッケージ"
+"のみを使用することをお勧めします。"
 
 #. SysConfig
 msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
 msgstr ""
+"この構成は、OTRS CloudService Proxy サービスへの URL を定義します。SysConfig "
+"'Znuny4OTRSRepoType' の選択に応じて、http または https "
+"プレフィックスが追加されます。"
 
 #. SysConfig
 msgid "This configuration registers a Output post-filter to extend package verification."
-msgstr ""
+msgstr "この構成は、パッケージ検証を拡張するための出力ポストフィルターを登録します。"
 
 #. SysConfig
 msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
-msgstr ""
+msgstr "この構成は、OTRS Business Solution TM 広告を削除する OutputFilter "
+"モジュールを登録します。"
 
 #. SysConfig
 msgid "This configuration registers an output filter to hide online repository selection in package manager."
-msgstr ""
+msgstr "この構成は、パッケージ マネージャーでオンライン "
+"リポジトリの選択を非表示にする出力フィルターを登録します。"
 
 #. SysConfig
 msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
-msgstr ""
+msgstr "長い間テストポミュールチェックに合格しなかった、きちんとした未処理のリリース"
+"。"
 
 #. SysConfig
 msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
-msgstr ""
+msgstr "これらのグループのいずれかで rw 権限を持つユーザーは、強制プッシュ 'git push "
+"--force' を実行できます。"
 
 #. SysConfig
 msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
 msgstr ""
+"これらのグループのいずれかで rw "
+"権限を持つユーザーは、プロジェクトを管理することができます。さらに、"
+"メンバーには git 管理に対する管理者権限があります。"
 
 #. SysConfig
 msgid "Defines the initial height for the rich text editor component in pixels."
-msgstr ""
+msgstr "リッチ テキスト エディター "
+"コンポーネントの初期の高さをピクセル単位で定義します。"
 
 #. SysConfig
 msgid "Defines if parent-child translations for queues and services should be generated automatically."
-msgstr ""
+msgstr "キューとサービスの親子変換を自動的に生成するかどうかを定義します。"
 
 #. SysConfig
 msgid "Defines the initial height in pixels for the rich text editor component for this screen."
-msgstr ""
+msgstr "この画面のリッチ テキスト エディター "
+"コンポーネントの初期の高さをピクセル単位で定義します。"
