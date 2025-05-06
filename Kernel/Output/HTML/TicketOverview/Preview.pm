@@ -2,9 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2021 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - d2d6be92c1665473091303dbf300e0c830d6d9be - Kernel/Output/HTML/TicketOverview/Preview.pm
+# $origin: otobo - c4729719b9788da163909113055de495fac35df4 - Kernel/Output/HTML/TicketOverview/Preview.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -273,8 +273,8 @@ sub Run {
     if ( IsHashRefWithData($PreviewArticleSenderTypes) ) {
 
         KEY:
-        for my $Key ( %{$PreviewArticleSenderTypes} ) {
-            next KEY if !$PreviewArticleSenderTypes->{$Key};
+        for my $Key ( keys %{$PreviewArticleSenderTypes} ) {
+            next KEY unless $PreviewArticleSenderTypes->{$Key};
 
             my $ID = $ArticleObject->ArticleSenderTypeLookup( SenderType => $Key );
             if ($ID) {

@@ -2,9 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2021 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - afa8bfc3a04f714330d5489defd83c87642bc23c - Kernel/Modules/AgentTicketPhone.pm
+# $origin: otobo - d3b15f7495f03a77b3fa72babe7111a4c701a2b4 - Kernel/Modules/AgentTicketPhone.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -1026,7 +1026,6 @@ sub Run {
                     ChangedElements           => \%ChangedElements,                        # optional to reduce ACL evaluation
                     Action                    => $Self->{Action},
                     UserID                    => $Self->{UserID},
-                    TicketID                  => $Self->{TicketID},
                     FormID                    => $Self->{FormID},
                     CustomerUser              => $SplitTicketData{CustomerUserID} || '',
                     GetParam                  => {
@@ -2171,7 +2170,7 @@ sub Run {
 # ---
 
         # get redirect screen
-        my $NextScreen = $Self->{UserCreateNextMask} || 'AgentTicketPhone';
+        my $NextScreen = $Self->{Session}{UserCreateNextMask} || 'AgentTicketPhone';
 
         # redirect
         return $LayoutObject->Redirect(
