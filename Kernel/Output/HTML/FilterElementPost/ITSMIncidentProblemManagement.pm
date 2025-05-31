@@ -103,12 +103,6 @@ sub Run {
         return 1;
     }
 
-    # add two hidden fields for ImpactRC and PriorityRC
-    ${ $Param{Data} }
-        =~ s{(<input type="hidden" name="FormID")}{<input type="hidden" id="ImpactRC" name="ImpactRC" value="0"/>\n$1}ms;
-    ${ $Param{Data} }
-        =~ s{(<input type="hidden" name="FormID")}{<input type="hidden" id="PriorityRC" name="PriorityRC" value="0"/>\n$1}ms;
-
     # Define Priority field name for all AgentTicketActionCommon based templates.
     my $PriorityFieldName = 'NewPriorityID';
 
@@ -116,17 +110,6 @@ sub Run {
 
         # Use another field name (will be used later)
         $PriorityFieldName = 'PriorityID';
-
-        # get FormID
-        my $FormID;
-        if ( ${ $Param{Data} } =~ m{<input type="hidden" name="FormID" value="([^<>]+)"/>}ms ) {
-            $FormID = $1;
-        }
-
-        # add "Link Ticket" link
-        my $TranslatedString = $LayoutObject->{LanguageObject}->Translate('Link ticket');
-        ${ $Param{Data} }
-            =~ s{(<!-- OutputFilterHook_TicketOptionsEnd -->)}{<a href="$LayoutObject->{Baselink}Action=AgentLinkObject;Mode=Temporary;SourceObject=Ticket;SourceKey=$FormID;TargetIdentifier=ITSMConfigItem" id="OptionLinkTicket" class="AsPopup">[ $TranslatedString ]</a>\n$1}ms;
     }
 
     # For all AgentTicketActionCommon based templates
