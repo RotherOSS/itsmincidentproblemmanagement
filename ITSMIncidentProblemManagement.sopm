@@ -65,13 +65,8 @@
         <File Permission="660" Location="Kernel/Language/zh_CN_ITSMIncidentProblemManagement.pm" />
         <File Permission="660" Location="Kernel/Language/zh_TW_ITSMIncidentProblemManagement.pm" />
         <File Permission="660" Location="Kernel/Modules/AgentITSMIncidentProblemManagement.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentTicketActionCommon.pm" />
         <File Permission="660" Location="Kernel/Modules/AgentTicketAddtlITSMField.pm" />
         <File Permission="660" Location="Kernel/Modules/AgentTicketDecision.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentTicketEmail.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentTicketPhone.pm" />
-        <File Permission="660" Location="Kernel/Modules/AgentTicketProcess.pm" />
-        <File Permission="660" Location="Kernel/Modules/CustomerTicketProcess.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentTicketAddtlITSMField.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentTicketDecision.tt" />
