@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -31,7 +31,6 @@ sub Data {
     $Self->{Translation}->{'Service Incident State'} = 'Состояние Сервиса';
 
     # Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
-    $Self->{Translation}->{'Link ticket'} = 'Связать заявку';
     $Self->{Translation}->{'Change Decision of %s%s%s'} = 'Изменить решение %s%s%s';
     $Self->{Translation}->{'Change ITSM fields of %s%s%s'} = 'Изменить поля ITSM %s%s%s';
 

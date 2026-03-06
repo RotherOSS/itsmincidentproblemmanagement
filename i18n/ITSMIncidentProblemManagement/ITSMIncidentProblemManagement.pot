@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMIncidentProblemManagement\n"
-"POT-Creation-Date: 2024-08-02 02:53+0000\n"
+"POT-Creation-Date: 2026-03-06 11:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,10 +20,6 @@ msgstr ""
 
 #. JS Template: ServiceIncidentState
 msgid "Service Incident State"
-msgstr ""
-
-#. Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
-msgid "Link ticket"
 msgstr ""
 
 #. Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm

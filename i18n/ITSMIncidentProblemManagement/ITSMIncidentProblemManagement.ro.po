@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMIncidentProblemManagement\n"
-"POT-Creation-Date: 2019-06-25 12:26+0000\n"
+"POT-Creation-Date: 2026-03-06 11:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,10 +21,6 @@ msgstr "Impact"
 #. JS Template: ServiceIncidentState
 msgid "Service Incident State"
 msgstr ""
-
-#. Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
-msgid "Link ticket"
-msgstr "Uneste ticket"
 
 #. Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
 msgid "Change Decision of %s%s%s"
@@ -308,17 +304,5 @@ msgstr ""
 
 #. SysConfig
 msgid "Ticket decision."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the initial height for the rich text editor component in pixels."
-msgstr ""
-
-#. SysConfig
-msgid "Defines if parent-child translations for queues and services should be generated automatically."
-msgstr ""
-
-#. SysConfig
-msgid "Defines the initial height in pixels for the rich text editor component for this screen."
 msgstr ""
 
