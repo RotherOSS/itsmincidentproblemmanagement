@@ -2,9 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 55126f4ab25373dded7533aeb0d7cd7743e7e7a9 - Kernel/Output/HTML/Templates/Standard/AgentTicketOverviewMedium.tt
+# $origin: otobo - deb99d60daf212ae73ec7feb78074f3f7ae563f8 - Kernel/Output/HTML/Templates/Standard/AgentTicketOverviewMedium.tt
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -95,11 +95,9 @@
                         <td>
                             <label>[% Translate("Queue") | html %]</label><div title="[% Data.Queue | html %]">[% Data.Queue | html %]</div>
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% IF !Data.ITSMIncidentProblemManagement %]
-# ---
+# EO ITSMIncidentProblemManagement
                         <td>
 [% RenderBlockStart("CustomerIDRW") %]
                             <label>[% Translate("Customer ID") | html %]</label>[% IF Data.CustomerID %]<a href="[% Config("CustomerDBLink") | Interpolate %]" class="AsPopup PopupType_TicketAction" [% Config("CustomerDBLinkTarget") %]>[% Data.CustomerID | html %]</a>[% END %]
@@ -109,11 +107,9 @@
 [% RenderBlockEnd("CustomerIDRO") %]
                             <br /><div title="[% Data.CustomerName | html %]">[% Data.CustomerName | html %]</div>
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% END %]
-# ---
+# EO ITSMIncidentProblemManagement
 # example of how to use fixed dynamic field blocks for customizations
 # Note: Field1 is the name of the field and had to be replaced with the actual
 # field name
@@ -134,9 +130,7 @@
                             <div title="[% Translate("Service Time") | html %]: [% Data.FirstResponseTimeWorkingTime | html %]" class="[% Data.FirstResponseTimeClass | html %]">[% Data.FirstResponseTimeHuman | html %] / [% Data.FirstResponseTimeDestinationDate | Localize("TimeShort") %]</div>
 [% RenderBlockEnd("FirstResponseTime") %]
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% IF Data.ITSMIncidentProblemManagement %]
                         <td>
                             <label>[% Translate("Update Time") | html %]</label>
@@ -151,7 +145,7 @@
 [% RenderBlockEnd("SolutionTime") %]
                         </td>
 [% END %]
-# ---
+# EO ITSMIncidentProblemManagement
                     </tr>
                     <tr>
                         <td>
@@ -165,9 +159,7 @@
                             <label>[% Translate("Type") | html %]</label><div title="[% Data.Type | html %]">[% Data.Type | html %]</div>
 [% RenderBlockEnd("Type") %]
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% IF Data.ITSMIncidentProblemManagement %]
                         <td>
                             <label>[% Translate("Criticality") | html %]</label>
@@ -181,7 +173,7 @@
                             <label>[% Translate("Priority") | html %]</label><div title="[% Translate(Data.Priority) | html %]">[% Translate(Data.Priority) | html %]</div>
                         </td>
 [% END %]
-# ---
+# EO ITSMIncidentProblemManagement
 # example of how to use fixed dynamic field blocks for customizations
 # Note: Field2 is the name of the field and had to be replaced with the actual
 # field name
@@ -196,22 +188,18 @@
 #[% RenderBlockEnd("DynamicField_Field2Plain") %]
 #                        </td>
 #[% RenderBlockEnd("DynamicField_Field2") %]
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% IF !Data.ITSMIncidentProblemManagement %]
-# ---
+# EO ITSMIncidentProblemManagement
                         <td>
                             <label>[% Translate("Update Time") | html %]</label>
 [% RenderBlockStart("UpdateTime") %]
                             <div title="[% Translate("Service Time") | html %]: [% Data.UpdateTimeWorkingTime | html %]" class="[% Data.UpdateTimeClass | html %]">[% Data.UpdateTimeHuman | html %] / [% Data.UpdateTimeDestinationDate | Localize("TimeShort") %]</div>
 [% RenderBlockEnd("UpdateTime") %]
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% END %]
-# ---
+# EO ITSMIncidentProblemManagement
                     </tr>
                     <tr>
                         <td>
@@ -239,9 +227,7 @@
                             <label>[% Translate("Service Level Agreement") | html %]</label><div title="[% Data.SLA | html %]">[% Data.SLA | html %]</div>
 [% RenderBlockEnd("SLA") %]
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% IF Data.ITSMIncidentProblemManagement %]
                         <td>
 [% RenderBlockStart("CustomerIDRW") %]
@@ -253,7 +239,7 @@
                             <br /><div title="[% Data.CustomerName | html %]">[% Data.CustomerName | html %]</div>
                         </td>
 [% END %]
-# ---
+# EO ITSMIncidentProblemManagement
 # example of how to use fixed dynamic field blocks for customizations
 # Note: Field3 is the name of the field and had to be replaced with the actual
 # field name
@@ -268,22 +254,24 @@
 #[% RenderBlockEnd("DynamicField_Field3Plain") %]
 #                        </td>
 #[% RenderBlockEnd("DynamicField_Field3") %]
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% IF !Data.ITSMIncidentProblemManagement %]
-# ---
+# EO ITSMIncidentProblemManagement
                         <td>
                             <label>[% Translate("Solution Time") | html %]</label>
 [% RenderBlockStart("SolutionTime") %]
                             <div title="[% Translate("Service Time") | html %]: [% Data.SolutionTimeWorkingTime | html %]" class="[% Data.SolutionTimeClass | html %]">[% Data.SolutionTimeHuman | html %] / [% Data.SolutionTimeDestinationDate | Localize("TimeShort") %]</div>
 [% RenderBlockEnd("SolutionTime") %]
                         </td>
-# ---
-# ITSMIncidentProblemManagement
-# ---
+# Rother OSS / ITSMIncidentProblemManagement
 [% END %]
-# ---
+# EO ITSMIncidentProblemManagement
+                        <td>
+                            <label>[% Translate("Accounted Time") | html %]</label>
+[% RenderBlockStart("AccountedTime") %]
+                            <div title="[% Translate("Accounted Time") | html %]: [% Data.AccountedTime | html %]" class="[% Data.SolutionTimeClass | html %]">[% Data.AccountedTime | html %]</div>
+[% RenderBlockEnd("AccountedTime") %]
+                        </td>
                     </tr>
                 </tbody>
             </table>

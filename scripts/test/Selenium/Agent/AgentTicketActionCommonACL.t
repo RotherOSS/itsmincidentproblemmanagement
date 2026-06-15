@@ -2,9 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 0ad48f278324b4dea38544c8437be9bc22e7f110 - scripts/test/Selenium/Agent/AgentTicketActionCommonACL.t
+# $origin: otobo - 8e88b3b69fefc06115da281a41cb3aa272d086ac - scripts/test/Selenium/Agent/AgentTicketActionCommonACL.t
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -81,7 +81,7 @@ $Selenium->RunTest(
         my $DynamicFieldID     = $DynamicFieldObject->DynamicFieldAdd(
             Name       => 'Field' . $RandomID,
             Label      => 'Field' . $RandomID,
-            FieldOrder => 99998,
+            FieldOrder => 99997,
             FieldType  => 'Dropdown',
             ObjectType => 'Ticket',
             Config     => {
@@ -102,7 +102,7 @@ $Selenium->RunTest(
         my $DynamicFieldID2 = $DynamicFieldObject->DynamicFieldAdd(
             Name       => 'Field2' . $RandomID,
             Label      => 'Field2' . $RandomID,
-            FieldOrder => 99999,
+            FieldOrder => 99998,
             FieldType  => 'Dropdown',
             ObjectType => 'Ticket',
             Config     => {
@@ -120,7 +120,31 @@ $Selenium->RunTest(
             ValidID => 1,
             UserID  => 1,
         );
-        ok( $DynamicFieldID2, "DynamicFieldAdd - Added dynamic field ($DynamicFieldID)" );
+        ok( $DynamicFieldID2, "DynamicFieldAdd - Added dynamic field ($DynamicFieldID2)" );
+
+        my $DynamicFieldID3 = $DynamicFieldObject->DynamicFieldAdd(
+            Name       => 'Field3' . $RandomID,
+            Label      => 'Field3' . $RandomID,
+            FieldOrder => 99999,
+            FieldType  => 'Dropdown',
+            ObjectType => 'Ticket',
+            Config     => {
+                DefaultValue   => '',
+                MultiValue     => 1,
+                PossibleNone   => 1,
+                PossibleValues => {
+                    a => 'a',
+                    b => 'b',
+                    c => 'c',
+                    d => 'd',
+                },
+                TranslatableValues => 1,
+            },
+            Reorder => 0,
+            ValidID => 1,
+            UserID  => 1,
+        );
+        ok( $DynamicFieldID3, "DynamicFieldAdd - Added dynamic field ($DynamicFieldID3)" );
 
         $Helper->ConfigSettingChange(
             Valid => 1,
@@ -128,6 +152,7 @@ $Selenium->RunTest(
             Value => {
                 'Field' . $RandomID  => 1,
                 'Field2' . $RandomID => 1,
+                'Field3' . $RandomID => 1,
             },
         );
 
@@ -233,6 +258,10 @@ $Selenium->RunTest(
         DynamicField_Field2$RandomID:
         - 'a'
         - 'b'
+        DynamicField_Field3$RandomID:
+        - ''
+        - 'a'
+        - 'b'
   ConfigMatch:
     Properties:
       DynamicField:
@@ -313,9 +342,7 @@ END_CONTENT
         # Create some test services.
         my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# Rother OSS / ITSMIncidentProblemManagement
         # Get the list of service types from general catalog.
         my $ServiceTypeList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
             Class => 'ITSM::Service::Type',
@@ -331,22 +358,16 @@ END_CONTENT
 
         # Build a lookup hash.
         my %SLATypeName2ID = reverse %{$SLATypeList};
+# EO ITSMIncidentProblemManagement
 
-        # ---
-
-        my $ServiceID;
         my @ServiceIDs;
         for my $Count ( 1 .. 3 ) {
             my $ServiceID = $ServiceObject->ServiceAdd(
                 Name    => "UT Test Service $Count $RandomID",
-
-                # ---
-                # ITSMIncidentProblemManagement
-                # ---
+# Rother OSS / ITSMIncidentProblemManagement
                 TypeID      => $ServiceTypeName2ID{Training},
                 Criticality => '3 normal',
-
-                # ---
+# EO ITSMIncidentProblemManagement
                 ValidID => 1,
                 UserID  => 1,
                 Comment => "test script: $0",
@@ -371,15 +392,11 @@ END_CONTENT
             my $SLAID = $SLAObject->SLAAdd(
                 ServiceIDs => \@ServiceIDs,
                 Name       => "UT Test SLA $Count $RandomID",
-
-                # ---
-                # ITSMIncidentProblemManagement
-                # ---
+# Rother OSS / ITSMIncidentProblemManagement
                 TypeID => $SLATypeName2ID{Other},
-
-                # ---
-                ValidID => 1,
-                UserID  => 1,
+# EO ITSMIncidentProblemManagement
+                ValidID    => 1,
+                UserID     => 1,
             );
             push @SLAs, $SLAID;
         }
@@ -547,6 +564,24 @@ END_CONTENT
             "There are only two entries in the dynamic field 2 selection",
         );
 
+        is(
+            $Selenium->execute_script(
+                "return \$('#DynamicField_Field3${RandomID}_0 option:not([value=\"\"])').length;"
+            ),
+            2,
+            "There are only two entries in the first dynamic field 3 selection",
+        );
+
+        $Selenium->execute_script("\$('#DynamicField_Field3${RandomID}_0').closest('.FieldCell').find('.AddValueRow').trigger('click');");
+
+        is(
+            $Selenium->execute_script(
+                "return \$('#DynamicField_Field3${RandomID}_1 option:not([value=\"\"])').length;"
+            ),
+            2,
+            "There are only two entries in the second dynamic field 3 selection",
+        );
+
         # De-select the dynamic field value for the first field.
         $Selenium->InputFieldValueSet(
             Element => "#DynamicField_Field$RandomID",
@@ -558,6 +593,26 @@ END_CONTENT
             $Selenium->execute_script("return \$('#DynamicField_Field2$RandomID option:not([value=\"\"])').length;"),
             4,
             "There are all four entries in the dynamic field 2 selection",
+        );
+
+        is(
+            $Selenium->execute_script("return \$('#DynamicField_Field3${RandomID}_0 option:not([value=\"\"])').length;"),
+            4,
+            "There are all four entries in the first dynamic field 3 selection",
+        );
+
+        is(
+            $Selenium->execute_script("return \$('#DynamicField_Field3${RandomID}_1 option:not([value=\"\"])').length;"),
+            4,
+            "There are all four entries in the second dynamic field 3 selection",
+        );
+
+        $Selenium->execute_script("\$('#DynamicField_Field3${RandomID}_1').closest('.FieldCell').find('.AddValueRow').trigger('click');");
+
+        is(
+            $Selenium->execute_script("return \$('#DynamicField_Field3${RandomID}_2 option:not([value=\"\"])').length;"),
+            4,
+            "There are all four entries in the third dynamic field 3 selection",
         );
 
         # Close the new note popup.
@@ -683,9 +738,7 @@ END_CONTENT
         ok( $Success, "Deleted service relations for $CustomerUserLogin" );
         for my $ServiceID (@ServiceIDs) {
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# Rother OSS / ITSMIncidentProblemManagement
             # Clean up servica data.
             $Success = $DBObject->Do(
                 SQL  => "DELETE FROM service_preferences WHERE service_id = ?",
@@ -695,8 +748,8 @@ END_CONTENT
                 $Success,
                 "ServicePreferences is deleted - ID $ServiceID",
             );
+# EO ITSMIncidentProblemManagement
 
-            # ---
             $Success = $DBObject->Do(
                 SQL  => "DELETE FROM service WHERE ID = ?",
                 Bind => [ \$ServiceID ],
@@ -722,6 +775,12 @@ END_CONTENT
             UserID => 1,
         );
         ok( $Success, "DynamicFieldDelete - Deleted test dynamic field $DynamicFieldID2" );
+
+        $Success = $DynamicFieldObject->DynamicFieldDelete(
+            ID     => $DynamicFieldID3,
+            UserID => 1,
+        );
+        ok( $Success, "DynamicFieldDelete - Deleted test dynamic field $DynamicFieldID3" );
 
         my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
 
