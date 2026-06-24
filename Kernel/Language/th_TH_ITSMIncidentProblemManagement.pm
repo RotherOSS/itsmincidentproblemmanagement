@@ -61,6 +61,8 @@ sub Data {
         'อนุญาตให้กำหนดประเภทใหม่สำหรับตั๋ว (ถ้าคุณลักษณะประเภทตั๋วถูกเปิดใช้งาน)';
     $Self->{Translation}->{'Change the ITSM fields!'} = 'เปลี่ยนฟิลด์ITSM';
     $Self->{Translation}->{'Decision'} = 'การตัดสินใจ';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         'กำหนดค่าถ้าหากจำเป็นต้องใช้ตั๋วล็อคในหน้าจอฟิลด์เพิ่มเติมของ ITSM ในอินเตอร์เฟซของเอเย่นต์ (ทำการล็อคตั๋วถ้าตั๋วหากยังไม่ได้ล็อคและเซตให้เอเย่นต์ปัจจุบันเป็นเจ้าของอัตโนมัติ)';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =

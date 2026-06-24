@@ -61,6 +61,8 @@ sub Data {
         'اجازه تعریف جدید برای انواع  درخواست  می دهد(اگر ویژگی نوع درخواست فعال باشد).';
     $Self->{Translation}->{'Change the ITSM fields!'} = 'فیلدهای ITSM را تغییر دهید!';
     $Self->{Translation}->{'Decision'} = 'تصمیم';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
