@@ -61,6 +61,8 @@ sub Data {
         'Ermöglicht die Definition neuer Ticket-Typen (wenn Ticket-Typ-Funktion aktiviert ist).';
     $Self->{Translation}->{'Change the ITSM fields!'} = 'Ändern Sie die ITSM-Felder!';
     $Self->{Translation}->{'Decision'} = 'Entscheidung';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         'Bestimmt, ob diese Ansicht im Agenten-Interface das Sperren des Tickets voraussetzt. Das Ticket wird (falls nötig) gesperrt und der aktuelle Agent wird als Besitzer gesetzt.';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =

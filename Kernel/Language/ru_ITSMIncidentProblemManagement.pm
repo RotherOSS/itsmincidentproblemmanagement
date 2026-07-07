@@ -61,6 +61,8 @@ sub Data {
         'Позволяет определить новые Типы для заявок (если включено использование Типа).';
     $Self->{Translation}->{'Change the ITSM fields!'} = 'Изменить ITSM поля';
     $Self->{Translation}->{'Decision'} = 'Решение';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         'Определяет необходимость блокировки заявки на экране Дополнительные ITSM поля в интерфейсе агента (если заявка еще не блокирована, она блокируется и текущий агент автоматически назначается ее владельцем';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =

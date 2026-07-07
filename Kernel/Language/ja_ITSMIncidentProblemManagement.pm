@@ -61,6 +61,8 @@ sub Data {
         'チケットに関して新規タイプを定義することを許可します（チケット責任者機能が有効となっている場合）。';
     $Self->{Translation}->{'Change the ITSM fields!'} = 'ITSM項目を変更する！';
     $Self->{Translation}->{'Decision'} = '決定';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         '担当者 インターフェイスの ITSM フィールド画面でチケット ロックが必要かどうかを定義します。 (チケットがまだロックされていない場合、チケットはロックされ、現在の担当者がその所有者として自動的に設定されます。)';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =

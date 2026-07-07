@@ -61,6 +61,8 @@ sub Data {
         '允许定义新的工单类型（如果启用了工单类型功能）。';
     $Self->{Translation}->{'Change the ITSM fields!'} = '修改ITSM字段!';
     $Self->{Translation}->{'Decision'} = '决定';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         '定义服务人员界面在工单额外的ITSM字段窗口是否需要工单锁定（如果工单还没有锁定，则工单被锁定且当前服务人员被自动设置为工单所有者）。';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =

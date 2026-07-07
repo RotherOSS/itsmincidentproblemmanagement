@@ -61,6 +61,8 @@ sub Data {
         'Позволява дефиниране на нови типове за билет (ако функцията за тип билет е активирана).';
     $Self->{Translation}->{'Change the ITSM fields!'} = 'Променете ITSM полетата!';
     $Self->{Translation}->{'Decision'} = 'Решение';
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         'Определя дали е необходимо заключване на билет в допълнителния екран на ITSM поле на интерфейса на агента (ако билетът все още не е заключен, билетът се заключва и текущият агент ще бъде зададен автоматично като негов собственик).';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
