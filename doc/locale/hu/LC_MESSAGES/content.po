@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"PO-Revision-Date: 2026-07-13 14:45+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/manuals/itsmincidentproblemmanagement-documentation/hu/>\n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../content/index.rst:72
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:75
 msgid "Frontend::Module###AgentTicketAddtlITSMField"
@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../content/index.rst:87
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:90
 msgid "Loader::Module::AgentTicketDecision###003-ITSMTicket"
@@ -952,7 +952,7 @@ msgstr ""
 
 #: ../../content/index.rst:514
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../../content/index.rst:517
 msgid "Frontend::Output::FilterElementPost###ITSMIncidentProblemManagement"
