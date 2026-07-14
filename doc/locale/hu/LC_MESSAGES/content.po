@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-07-14 13:26+0000\n"
+"PO-Revision-Date: 2026-07-14 15:21+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmincidentproblemmanagement-documentation/hu/>\n"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../content/index.rst:58
 msgid "Core::Ticket"
-msgstr ""
+msgstr "Core::Ticket"
 
 #: ../../content/index.rst:61
 msgid "Ticket::Type"
@@ -789,7 +789,7 @@ msgstr ""
 
 #: ../../content/index.rst:406
 msgid "Frontend::Agent::View::TicketEmailNew"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketEmailNew"
 
 #: ../../content/index.rst:409
 msgid "Ticket::Frontend::AgentTicketEmail###ShowIncidentState"
@@ -805,7 +805,7 @@ msgstr ""
 
 #: ../../content/index.rst:417
 msgid "Frontend::Agent::View::TicketFreeText"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketFreeText"
 
 #: ../../content/index.rst:420
 msgid "Ticket::Frontend::AgentTicketFreeText###ShowIncidentState"
@@ -837,7 +837,7 @@ msgstr ""
 
 #: ../../content/index.rst:445
 msgid "Frontend::Agent::View::TicketPhoneNew"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketPhoneNew"
 
 #: ../../content/index.rst:448
 msgid "Ticket::Frontend::AgentTicketPhone###ShowIncidentState"
@@ -921,7 +921,7 @@ msgstr ""
 
 #: ../../content/index.rst:496
 msgid "Frontend::Agent::View::TicketZoom"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketZoom"
 
 #: ../../content/index.rst:499
 msgid "Ticket::Frontend::AgentTicketZoom###DynamicField"
