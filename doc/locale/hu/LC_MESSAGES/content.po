@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-07-13 16:00+0000\n"
+"PO-Revision-Date: 2026-07-14 13:26+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmincidentproblemmanagement-documentation/hu/>\n"
@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../../content/index.rst:65
 msgid "Core::Ticket::ACL"
-msgstr ""
+msgstr "Core::Ticket::ACL"
 
 #: ../../content/index.rst:68
 msgid "ACLKeysLevel3::Actions###100-Default-ITSM"
@@ -122,6 +122,8 @@ msgid ""
 "Defines which items are available for 'Action' in third level of the ACL "
 "structure."
 msgstr ""
+"Meghatározza, hogy mely elemek érhetők el az „Action” szakasznál az ACL "
+"szerkezet harmadik szintjén."
 
 #: ../../content/index.rst:72
 msgid "Frontend::Agent::ModuleRegistration"
@@ -297,6 +299,7 @@ msgstr ""
 #: ../../content/index.rst:174 ../../content/index.rst:319
 msgid "Sets if ticket owner must be selected by the agent."
 msgstr ""
+"Beállítja, hogy az ügyintézőnek ki kell választania a jegy tulajdonosát."
 
 #: ../../content/index.rst:177
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Responsible"
@@ -314,7 +317,7 @@ msgstr ""
 
 #: ../../content/index.rst:182 ../../content/index.rst:327
 msgid "Sets if ticket responsible must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania a jegy felelősét."
 
 #: ../../content/index.rst:185
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###State"
@@ -373,6 +376,8 @@ msgid ""
 "Sets if note must be filled in by the agent. Can be overwritten by "
 "Ticket::Frontend::NeedAccountedTime."
 msgstr ""
+"Beállítja, hogy a jegyzetet ki kell-e töltenie az ügyintézőnek. Felülírható "
+"a Ticket::Frontend::NeedAccountedTime használatával."
 
 #: ../../content/index.rst:209
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Subject"
@@ -928,7 +933,7 @@ msgstr ""
 
 #: ../../content/index.rst:503
 msgid "Frontend::Agent::View::TicketZoom::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketZoom::MenuModule"
 
 #: ../../content/index.rst:506
 msgid "Ticket::Frontend::MenuModule###315-AddtlITSMField"
