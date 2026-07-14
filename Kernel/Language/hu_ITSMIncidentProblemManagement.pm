@@ -28,7 +28,7 @@ sub Data {
     $Self->{Translation}->{'Impact'} = 'Hatás';
 
     # JS Template: ServiceIncidentState
-    $Self->{Translation}->{'Service Incident State'} = 'Szolgáltatás incidensállapot';
+    $Self->{Translation}->{'Service Incident State'} = 'Szolgáltatás incidensállapota';
 
     # Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
     $Self->{Translation}->{'Change Decision of %s%s%s'} = '%s%s%s döntésének megváltoztatása';
@@ -62,7 +62,7 @@ sub Data {
     $Self->{Translation}->{'Change the ITSM fields!'} = 'Változtassa meg az ITSM mezőket!';
     $Self->{Translation}->{'Decision'} = 'Döntés';
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'Azon dinamikus mező objektumtípusok listájának meghatározása, amelyek hozzárendelhetők a csomag műveleteihez a dinamikus mező képernyőinek felületén keresztül.';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         'Meghatározza, hogy szükséges-e jegyzárolás az ügyintézői felület további ITSM mező képernyőjén (ha a jegy még nincs zárolva, akkor a jegy zárolva lesz, és az aktuális ügyintéző automatikusan annak tulajdonosaként lesz beállítva).';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
