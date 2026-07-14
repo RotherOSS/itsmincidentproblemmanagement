@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMIncidentProblemManagement\n"
 "POT-Creation-Date: 2026-06-24 13:49+0000\n"
-"PO-Revision-Date: 2026-07-13 17:00+0000\n"
+"PO-Revision-Date: 2026-07-14 10:21+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/itsmincidentproblemmanagement/hu/>\n"
@@ -23,7 +23,7 @@ msgstr "Hatás"
 
 #. JS Template: ServiceIncidentState
 msgid "Service Incident State"
-msgstr "Szolgáltatás incidensállapot"
+msgstr "Szolgáltatás incidensállapota"
 
 #. Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
 msgid "Change Decision of %s%s%s"
