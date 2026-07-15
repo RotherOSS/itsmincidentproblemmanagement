@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-07-14 15:21+0000\n"
+"PO-Revision-Date: 2026-07-15 17:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmincidentproblemmanagement-documentation/hu/>\n"
@@ -254,7 +254,7 @@ msgstr ""
 
 #: ../../content/index.rst:154 ../../content/index.rst:299
 msgid "Sets if service must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania a szolgáltatást."
 
 #: ../../content/index.rst:157
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###SLAMandatory"
@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../content/index.rst:158 ../../content/index.rst:303
 msgid "Sets if SLA must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania az SLA-t."
 
 #: ../../content/index.rst:161
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Queue"
@@ -273,6 +273,8 @@ msgid ""
 "Sets the queue in the ticket responsible screen of a zoomed ticket in the"
 " agent interface."
 msgstr ""
+"Beállítja a várólistát egy nagyított jegynek a jegyfelelős képernyőjén az "
+"ügyintézői felületen."
 
 #: ../../content/index.rst:165
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###QueueMandatory"
@@ -280,7 +282,7 @@ msgstr ""
 
 #: ../../content/index.rst:166 ../../content/index.rst:311
 msgid "Sets if queue must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania a várólistát."
 
 #: ../../content/index.rst:169
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Owner"
@@ -335,7 +337,7 @@ msgstr ""
 
 #: ../../content/index.rst:190 ../../content/index.rst:335
 msgid "Sets if state must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania az állapotot."
 
 #: ../../content/index.rst:193
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###StateType"
@@ -429,6 +431,8 @@ msgid ""
 "Defines if the note in the ticket note screen of the agent interface is "
 "visible for the customer by default."
 msgstr ""
+"Meghatározza, hogy az ügyintézői felület jegyjegyzet képernyőjén lévő "
+"jegyzet alapértelmezetten látható-e az ügyfélnek."
 
 #: ../../content/index.rst:229
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Priority"
@@ -469,6 +473,8 @@ msgid ""
 "Allows to save current work as draft in the ticket note screen of the "
 "agent interface."
 msgstr ""
+"Lehetővé teszi az aktuális munka elmentését piszkozatként az ügyintézői "
+"felület jegyjegyzet képernyőjén."
 
 #: ../../content/index.rst:245
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###HistoryType"
@@ -530,6 +536,7 @@ msgstr ""
 #: ../../content/index.rst:269
 msgid "Dynamic fields shown in the ticket close screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület jegylezárás képernyőjén megjelenített dinamikus mezők."
 
 #: ../../content/index.rst:272
 msgid "Frontend::Agent::View::TicketCompose"
@@ -542,6 +549,7 @@ msgstr ""
 #: ../../content/index.rst:276
 msgid "Dynamic fields shown in the ticket compose screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület jegyválasz képernyőjén megjelenített dinamikus mezők."
 
 #: ../../content/index.rst:279
 msgid "Frontend::Agent::View::TicketDecision"
@@ -603,6 +611,8 @@ msgid ""
 "Sets the queue in the ticket note screen of a zoomed ticket in the agent "
 "interface."
 msgstr ""
+"Beállítja a várólistát egy nagyított jegynek a jegyjegyzet képernyőjén az "
+"ügyintézői felületen."
 
 #: ../../content/index.rst:310
 msgid "Ticket::Frontend::AgentTicketDecision###QueueMandatory"
@@ -802,6 +812,8 @@ msgstr ""
 #: ../../content/index.rst:414
 msgid "Dynamic fields shown in the ticket email screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület új e-mail jegy képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../../content/index.rst:417
 msgid "Frontend::Agent::View::TicketFreeText"
@@ -850,6 +862,8 @@ msgstr ""
 #: ../../content/index.rst:453
 msgid "Dynamic fields shown in the ticket phone screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület új telefonos jegy képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../../content/index.rst:456
 msgid "Frontend::Agent::View::TicketPrint"
@@ -862,6 +876,8 @@ msgstr ""
 #: ../../content/index.rst:460
 msgid "Dynamic fields shown in the ticket print screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület jegynyomtatás képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../../content/index.rst:463
 msgid "Frontend::Agent::View::TicketPriority"
@@ -878,6 +894,8 @@ msgstr ""
 #: ../../content/index.rst:471
 msgid "Dynamic fields shown in the ticket priority screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület jegyprioritás képernyőjén megjelenített dinamikus "
+"mezők."
 
 #: ../../content/index.rst:474
 msgid "Ticket::Frontend::AgentTicketPriority###TicketType"
@@ -918,6 +936,7 @@ msgstr ""
 #: ../../content/index.rst:493
 msgid "Dynamic fields shown in the ticket search screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület jegykeresés képernyőjén megjelenített dinamikus mezők."
 
 #: ../../content/index.rst:496
 msgid "Frontend::Agent::View::TicketZoom"
@@ -980,6 +999,7 @@ msgstr ""
 #: ../../content/index.rst:525
 msgid "Dynamic fields shown in the ticket print screen of the customer interface."
 msgstr ""
+"Az ügyfélfelület jegynyomtatás képernyőjén megjelenített dinamikus mezők."
 
 #: ../../content/index.rst:528
 msgid "Frontend::Customer::View::TicketZoom"
@@ -992,6 +1012,7 @@ msgstr ""
 #: ../../content/index.rst:532
 msgid "Dynamic fields shown in the ticket zoom screen of the customer interface."
 msgstr ""
+"Az ügyfélfelület jegynagyítás képernyőjén megjelenített dinamikus mezők."
 
 #: ../../content/index.rst:535
 msgid "About"
