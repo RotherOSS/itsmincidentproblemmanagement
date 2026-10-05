@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-10-05 03:41+0000\n"
+"PO-Revision-Date: 2026-10-05 05:41+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmincidentproblemmanagement-documentation/ja/>\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
-msgstr ""
+msgstr "Sacrifice to Sphinx"
 
 #: ../../content/index.rst:19
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../content/index.rst:20
 msgid "The OTOBO::ITSM Incident and Problem Management package."
@@ -35,19 +35,19 @@ msgstr ""
 
 #: ../../content/index.rst:23
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../../content/index.rst:26
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../../content/index.rst:27
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../../content/index.rst:30
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../../content/index.rst:31
 msgid "ITSMCore 11.0.1"
@@ -55,23 +55,23 @@ msgstr ""
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../../content/index.rst:35
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:38
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../content/index.rst:41
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../content/index.rst:44
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../../content/index.rst:47
 msgid "Core::Stats"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../content/index.rst:58
 msgid "Core::Ticket"
-msgstr ""
+msgstr "Core::Ticket"
 
 #: ../../content/index.rst:61
 msgid "Ticket::Type"
@@ -118,7 +118,6 @@ msgid "ACLKeysLevel3::Actions###100-Default-ITSM"
 msgstr ""
 
 #: ../../content/index.rst:69
-#, fuzzy
 msgid ""
 "Defines which items are available for 'Action' in third level of the ACL "
 "structure."
@@ -126,7 +125,7 @@ msgstr "ACL 構造の第3階層で 'Action' に使用できる項目を定義し
 
 #: ../../content/index.rst:72
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:75
 msgid "Frontend::Module###AgentTicketAddtlITSMField"
@@ -135,7 +134,7 @@ msgstr ""
 #: ../../content/index.rst:76 ../../content/index.rst:80
 #: ../../content/index.rst:84
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../../content/index.rst:79
 msgid "Frontend::Module###AgentTicketDecision"
@@ -147,7 +146,7 @@ msgstr ""
 
 #: ../../content/index.rst:87
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:90
 msgid "Loader::Module::AgentTicketDecision###003-ITSMTicket"
@@ -160,7 +159,7 @@ msgstr ""
 #: ../../content/index.rst:123 ../../content/index.rst:127
 #: ../../content/index.rst:131
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
 #: ../../content/index.rst:94
 msgid "Loader::Module::AgentTicketAddtlITSMField###003-ITSMTicket"
@@ -253,7 +252,7 @@ msgstr ""
 
 #: ../../content/index.rst:154 ../../content/index.rst:299
 msgid "Sets if service must be selected by the agent."
-msgstr ""
+msgstr "担当者がサービスを選択する必要があるかどうかを設定します。"
 
 #: ../../content/index.rst:157
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###SLAMandatory"
@@ -261,7 +260,7 @@ msgstr ""
 
 #: ../../content/index.rst:158 ../../content/index.rst:303
 msgid "Sets if SLA must be selected by the agent."
-msgstr ""
+msgstr "担当者が SLA を選択する必要があるかどうかを設定します。"
 
 #: ../../content/index.rst:161
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Queue"
@@ -272,6 +271,8 @@ msgid ""
 "Sets the queue in the ticket responsible screen of a zoomed ticket in the"
 " agent interface."
 msgstr ""
+"担当者インタフェースのズームされたチケットのチケット責任者画面で、キューを設"
+"定します。"
 
 #: ../../content/index.rst:165
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###QueueMandatory"
@@ -279,7 +280,7 @@ msgstr ""
 
 #: ../../content/index.rst:166 ../../content/index.rst:311
 msgid "Sets if queue must be selected by the agent."
-msgstr ""
+msgstr "担当者がキューを選択する必要があるかどうかを設定します。"
 
 #: ../../content/index.rst:169
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Owner"
@@ -298,6 +299,8 @@ msgstr ""
 #: ../../content/index.rst:174 ../../content/index.rst:319
 msgid "Sets if ticket owner must be selected by the agent."
 msgstr ""
+"チケットの所有者が担当者によって必ず選択される必要があるかどうかを設定します"
+"。"
 
 #: ../../content/index.rst:177
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Responsible"
@@ -314,7 +317,6 @@ msgid "Ticket::Frontend::AgentTicketAddtlITSMField###ResponsibleMandatory"
 msgstr ""
 
 #: ../../content/index.rst:182 ../../content/index.rst:327
-#, fuzzy
 msgid "Sets if ticket responsible must be selected by the agent."
 msgstr "担当者がチケットの責任者を選択する必要があるかどうかを設定します。"
 
@@ -333,7 +335,6 @@ msgid "Ticket::Frontend::AgentTicketAddtlITSMField###StateMandatory"
 msgstr ""
 
 #: ../../content/index.rst:190 ../../content/index.rst:335
-#, fuzzy
 msgid "Sets if state must be selected by the agent."
 msgstr "担当者がステータスを選択する必要があるかどうかを設定します。"
 
@@ -372,7 +373,6 @@ msgid "Ticket::Frontend::AgentTicketAddtlITSMField###NoteMandatory"
 msgstr ""
 
 #: ../../content/index.rst:206 ../../content/index.rst:351
-#, fuzzy
 msgid ""
 "Sets if note must be filled in by the agent. Can be overwritten by "
 "Ticket::Frontend::NeedAccountedTime."
@@ -426,7 +426,6 @@ msgid "Ticket::Frontend::AgentTicketAddtlITSMField###IsVisibleForCustomerDefault
 msgstr ""
 
 #: ../../content/index.rst:226 ../../content/index.rst:371
-#, fuzzy
 msgid ""
 "Defines if the note in the ticket note screen of the agent interface is "
 "visible for the customer by default."
@@ -473,6 +472,8 @@ msgid ""
 "Allows to save current work as draft in the ticket note screen of the "
 "agent interface."
 msgstr ""
+"担当者インターフェイスのチケット移動画面で現在の作業を下書きとして保存できま"
+"す。"
 
 #: ../../content/index.rst:245
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###HistoryType"
@@ -533,7 +534,7 @@ msgstr ""
 
 #: ../../content/index.rst:269
 msgid "Dynamic fields shown in the ticket close screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースのチケットクローズ画面に表示するダイナミック・フィールド"
 
 #: ../../content/index.rst:272
 msgid "Frontend::Agent::View::TicketCompose"
@@ -545,7 +546,7 @@ msgstr ""
 
 #: ../../content/index.rst:276
 msgid "Dynamic fields shown in the ticket compose screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースのチケット作成画面に表示するダイナミック・フィールド"
 
 #: ../../content/index.rst:279
 msgid "Frontend::Agent::View::TicketDecision"
@@ -607,6 +608,8 @@ msgid ""
 "Sets the queue in the ticket note screen of a zoomed ticket in the agent "
 "interface."
 msgstr ""
+"担当者インタフェースのズームされたチケットのチケットノート画面で、キューを設"
+"定します。"
 
 #: ../../content/index.rst:310
 msgid "Ticket::Frontend::AgentTicketDecision###QueueMandatory"
@@ -793,7 +796,7 @@ msgstr ""
 
 #: ../../content/index.rst:406
 msgid "Frontend::Agent::View::TicketEmailNew"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketEmailNew"
 
 #: ../../content/index.rst:409
 msgid "Ticket::Frontend::AgentTicketEmail###ShowIncidentState"
@@ -806,10 +809,12 @@ msgstr ""
 #: ../../content/index.rst:414
 msgid "Dynamic fields shown in the ticket email screen of the agent interface."
 msgstr ""
+"担当者インタフェースのチケット電子メール送信画面に表示するダイナミック・"
+"フィールド"
 
 #: ../../content/index.rst:417
 msgid "Frontend::Agent::View::TicketFreeText"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketFreeText"
 
 #: ../../content/index.rst:420
 msgid "Ticket::Frontend::AgentTicketFreeText###ShowIncidentState"
@@ -841,7 +846,7 @@ msgstr ""
 
 #: ../../content/index.rst:445
 msgid "Frontend::Agent::View::TicketPhoneNew"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketPhoneNew"
 
 #: ../../content/index.rst:448
 msgid "Ticket::Frontend::AgentTicketPhone###ShowIncidentState"
@@ -852,7 +857,6 @@ msgid "Ticket::Frontend::AgentTicketPhone###DynamicField"
 msgstr ""
 
 #: ../../content/index.rst:453
-#, fuzzy
 msgid "Dynamic fields shown in the ticket phone screen of the agent interface."
 msgstr "担当者インタフェースのチケット電話画面に表示するダイナミックフィールド。"
 
@@ -866,7 +870,7 @@ msgstr ""
 
 #: ../../content/index.rst:460
 msgid "Dynamic fields shown in the ticket print screen of the agent interface."
-msgstr ""
+msgstr "担当者インターフェイスのチケット印刷画面に表示するダイナミック・フィールド"
 
 #: ../../content/index.rst:463
 msgid "Frontend::Agent::View::TicketPriority"
@@ -882,7 +886,7 @@ msgstr ""
 
 #: ../../content/index.rst:471
 msgid "Dynamic fields shown in the ticket priority screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースのチケット優先度画面に表示するダイナミック・フィールド"
 
 #: ../../content/index.rst:474
 msgid "Ticket::Frontend::AgentTicketPriority###TicketType"
@@ -922,11 +926,11 @@ msgstr ""
 
 #: ../../content/index.rst:493
 msgid "Dynamic fields shown in the ticket search screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースのチケット検索画面に表示するダイナミック・フィールド"
 
 #: ../../content/index.rst:496
 msgid "Frontend::Agent::View::TicketZoom"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketZoom"
 
 #: ../../content/index.rst:499
 msgid "Ticket::Frontend::AgentTicketZoom###DynamicField"
@@ -962,7 +966,7 @@ msgstr ""
 
 #: ../../content/index.rst:514
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../../content/index.rst:517
 msgid "Frontend::Output::FilterElementPost###ITSMIncidentProblemManagement"
@@ -983,7 +987,6 @@ msgid "Ticket::Frontend::CustomerTicketPrint###DynamicField"
 msgstr ""
 
 #: ../../content/index.rst:525
-#, fuzzy
 msgid "Dynamic fields shown in the ticket print screen of the customer interface."
 msgstr "顧客インタフェースのチケット印刷画面に表示するダイナミックフィールド。"
 
@@ -996,36 +999,37 @@ msgid "Ticket::Frontend::CustomerTicketZoom###DynamicField"
 msgstr ""
 
 #: ../../content/index.rst:532
-#, fuzzy
 msgid "Dynamic fields shown in the ticket zoom screen of the customer interface."
 msgstr "顧客インタフェースのチケットズーム画面に表示するダイナミックフィールド。"
 
 #: ../../content/index.rst:535
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../../content/index.rst:538
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../../content/index.rst:539
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:540
 msgid "Email: hello@otobo.de"
-msgstr ""
+msgstr "メール: hello@otobo.de"
 
 #: ../../content/index.rst:541
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:544
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../../content/index.rst:545
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
