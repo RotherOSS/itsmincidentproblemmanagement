@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-10-05 05:41+0000\n"
+"PO-Revision-Date: 2026-10-05 07:41+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmincidentproblemmanagement-documentation/ja/>\n"
@@ -31,7 +31,7 @@ msgstr "説明"
 
 #: ../../content/index.rst:20
 msgid "The OTOBO::ITSM Incident and Problem Management package."
-msgstr ""
+msgstr "OTOBO::ITSM インシデント／問題管理パッケージ。"
 
 #: ../../content/index.rst:23
 msgid "System requirements"
@@ -51,7 +51,7 @@ msgstr "パッケージ"
 
 #: ../../content/index.rst:31
 msgid "ITSMCore 11.0.1"
-msgstr ""
+msgstr "ITSMCore 11.0.1"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
@@ -75,27 +75,31 @@ msgstr "設定リファレンス"
 
 #: ../../content/index.rst:47
 msgid "Core::Stats"
-msgstr ""
+msgstr "Core::Stats"
 
 #: ../../content/index.rst:50
 msgid "Stats::DynamicObjectRegistration###ITSMTicketFirstLevelSolutionRate"
-msgstr ""
+msgstr "Stats::DynamicObjectRegistration###ITSMTicketFirstLevelSolutionRate"
 
 #: ../../content/index.rst:51
 msgid ""
 "Enables the stats module to generate statistics about the average of ITSM"
 " ticket first level solution rate."
 msgstr ""
+"統計モジュールで、ITSM チケットの一次解決率の平均に関する統計を生成できるよう"
+"にします。"
 
 #: ../../content/index.rst:54
 msgid "Stats::DynamicObjectRegistration###ITSMTicketSolutionTimeAverage"
-msgstr ""
+msgstr "Stats::DynamicObjectRegistration###ITSMTicketSolutionTimeAverage"
 
 #: ../../content/index.rst:55
 msgid ""
 "Enables the stats module to generate statistics about the average of ITSM"
 " ticket solution."
 msgstr ""
+"統計モジュールで、ITSM チケットの解決の平均に関する統計を生成できるようにしま"
+"す。"
 
 #: ../../content/index.rst:58
 msgid "Core::Ticket"
@@ -103,19 +107,21 @@ msgstr "Core::Ticket"
 
 #: ../../content/index.rst:61
 msgid "Ticket::Type"
-msgstr ""
+msgstr "Ticket::Type"
 
 #: ../../content/index.rst:62
 msgid "Allows defining new types for ticket (if ticket type feature is enabled)."
 msgstr ""
+"チケットの新しいタイプを定義できるようにします（チケットタイプ機能が有効な場"
+"合）。"
 
 #: ../../content/index.rst:65
 msgid "Core::Ticket::ACL"
-msgstr ""
+msgstr "Core::Ticket::ACL"
 
 #: ../../content/index.rst:68
 msgid "ACLKeysLevel3::Actions###100-Default-ITSM"
-msgstr ""
+msgstr "ACLKeysLevel3::Actions###100-Default-ITSM"
 
 #: ../../content/index.rst:69
 msgid ""
@@ -129,7 +135,7 @@ msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:75
 msgid "Frontend::Module###AgentTicketAddtlITSMField"
-msgstr ""
+msgstr "Frontend::Module###AgentTicketAddtlITSMField"
 
 #: ../../content/index.rst:76 ../../content/index.rst:80
 #: ../../content/index.rst:84
@@ -138,11 +144,11 @@ msgstr "担当者インタフェース用のフロントエンドモジュール
 
 #: ../../content/index.rst:79
 msgid "Frontend::Module###AgentTicketDecision"
-msgstr ""
+msgstr "Frontend::Module###AgentTicketDecision"
 
 #: ../../content/index.rst:83
 msgid "Frontend::Module###AgentITSMIncidentProblemManagement"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMIncidentProblemManagement"
 
 #: ../../content/index.rst:87
 msgid "Frontend::Agent::ModuleRegistration::Loader"
@@ -150,7 +156,7 @@ msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:90
 msgid "Loader::Module::AgentTicketDecision###003-ITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketDecision###003-ITSMTicket"
 
 #: ../../content/index.rst:91 ../../content/index.rst:95
 #: ../../content/index.rst:99 ../../content/index.rst:103
@@ -163,61 +169,61 @@ msgstr "担当者インタフェース用のローダーモジュールの登録
 
 #: ../../content/index.rst:94
 msgid "Loader::Module::AgentTicketAddtlITSMField###003-ITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketAddtlITSMField###003-ITSMTicket"
 
 #: ../../content/index.rst:98
 msgid "Loader::Module::AgentTicketClose###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketClose###002-TicketITSMTicket"
 
 #: ../../content/index.rst:102
 msgid "Loader::Module::AgentTicketFreeText###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketFreeText###002-TicketITSMTicket"
 
 #: ../../content/index.rst:106
 msgid "Loader::Module::AgentTicketNote###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketNote###002-TicketITSMTicket"
 
 #: ../../content/index.rst:110
 msgid "Loader::Module::AgentTicketOwner###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketOwner###002-TicketITSMTicket"
 
 #: ../../content/index.rst:114
 msgid "Loader::Module::AgentTicketPending###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketPending###002-TicketITSMTicket"
 
 #: ../../content/index.rst:118
 msgid "Loader::Module::AgentTicketPriority###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketPriority###002-TicketITSMTicket"
 
 #: ../../content/index.rst:122
 msgid "Loader::Module::AgentTicketResponsible###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketResponsible###002-TicketITSMTicket"
 
 #: ../../content/index.rst:126
 msgid "Loader::Module::AgentTicketPhone###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketPhone###002-TicketITSMTicket"
 
 #: ../../content/index.rst:130
 msgid "Loader::Module::AgentTicketEmail###002-TicketITSMTicket"
-msgstr ""
+msgstr "Loader::Module::AgentTicketEmail###002-TicketITSMTicket"
 
 #: ../../content/index.rst:134
 msgid "Frontend::Agent::View::TicketAddtlITSMField"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketAddtlITSMField"
 
 #: ../../content/index.rst:137
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Permission"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Permission"
 
 #: ../../content/index.rst:138
 msgid ""
 "Required permissions to use the additional ITSM field screen in the agent"
 " interface."
-msgstr ""
+msgstr "担当者インタフェースで追加 ITSM フィールド画面を使用するために必要な権限。"
 
 #: ../../content/index.rst:141
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###RequiredLock"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###RequiredLock"
 
 #: ../../content/index.rst:142
 msgid ""
@@ -225,30 +231,37 @@ msgid ""
 "of the agent interface (if the ticket isn't locked yet, the ticket gets "
 "locked and the current agent will be set automatically as its owner)."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、チケットロックが必要かどう"
+"かを定義します（チケットがまだロックされていない場合、チケットはロックされ、"
+"現在の担当者が自動的に所有者として設定されます）。"
 
 #: ../../content/index.rst:145
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###TicketType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###TicketType"
 
 #: ../../content/index.rst:146
 msgid ""
 "Sets the ticket type in the additional ITSM field screen of the agent "
 "interface (Ticket::Type needs to be activated)."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、チケットタイプを設定します"
+"（Ticket::Type が有効である必要があります）。"
 
 #: ../../content/index.rst:149
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Service"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Service"
 
 #: ../../content/index.rst:150
 msgid ""
 "Sets the service in the additional ITSM field screen of the agent "
 "interface (Ticket::Service needs to be activated)."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、サービスを設定します（"
+"Ticket::Service が有効である必要があります）。"
 
 #: ../../content/index.rst:153
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###ServiceMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###ServiceMandatory"
 
 #: ../../content/index.rst:154 ../../content/index.rst:299
 msgid "Sets if service must be selected by the agent."
@@ -256,7 +269,7 @@ msgstr "担当者がサービスを選択する必要があるかどうかを設
 
 #: ../../content/index.rst:157
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###SLAMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###SLAMandatory"
 
 #: ../../content/index.rst:158 ../../content/index.rst:303
 msgid "Sets if SLA must be selected by the agent."
@@ -264,7 +277,7 @@ msgstr "担当者が SLA を選択する必要があるかどうかを設定し�
 
 #: ../../content/index.rst:161
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Queue"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Queue"
 
 #: ../../content/index.rst:162
 msgid ""
@@ -276,7 +289,7 @@ msgstr ""
 
 #: ../../content/index.rst:165
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###QueueMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###QueueMandatory"
 
 #: ../../content/index.rst:166 ../../content/index.rst:311
 msgid "Sets if queue must be selected by the agent."
@@ -284,17 +297,19 @@ msgstr "担当者がキューを選択する必要があるかどうかを設定
 
 #: ../../content/index.rst:169
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Owner"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Owner"
 
 #: ../../content/index.rst:170
 msgid ""
 "Sets the ticket owner in the additional ITSM field screen of the agent "
 "interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、チケットの所有者を設定しま"
+"す。"
 
 #: ../../content/index.rst:173
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###OwnerMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###OwnerMandatory"
 
 #: ../../content/index.rst:174 ../../content/index.rst:319
 msgid "Sets if ticket owner must be selected by the agent."
@@ -304,17 +319,19 @@ msgstr ""
 
 #: ../../content/index.rst:177
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Responsible"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Responsible"
 
 #: ../../content/index.rst:178
 msgid ""
 "Sets the ticket responsible in the additional ITSM field screen of the "
 "agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、チケットの責任者を設定しま"
+"す。"
 
 #: ../../content/index.rst:181
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###ResponsibleMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###ResponsibleMandatory"
 
 #: ../../content/index.rst:182 ../../content/index.rst:327
 msgid "Sets if ticket responsible must be selected by the agent."
@@ -322,17 +339,19 @@ msgstr "担当者がチケットの責任者を選択する必要があるかど
 
 #: ../../content/index.rst:185
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###State"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###State"
 
 #: ../../content/index.rst:186
 msgid ""
 "If a note is added by an agent, sets the state of a ticket in the "
 "additional ITSM field screen of the agent interface."
 msgstr ""
+"担当者がメモを追加した場合に、担当者インタフェースの追加 ITSM フィールド画面"
+"ででチケットのステータスを設定します。"
 
 #: ../../content/index.rst:189
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###StateMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###StateMandatory"
 
 #: ../../content/index.rst:190 ../../content/index.rst:335
 msgid "Sets if state must be selected by the agent."
@@ -340,37 +359,43 @@ msgstr "担当者がステータスを選択する必要があるかどうかを
 
 #: ../../content/index.rst:193
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###StateType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###StateType"
 
 #: ../../content/index.rst:194
 msgid ""
 "Defines the next state of a ticket after adding a note, in the additional"
 " ITSM field screen of the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、メモ追加後のチケットの次の"
+"ステータスを定義します。"
 
 #: ../../content/index.rst:197
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###StateDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###StateDefault"
 
 #: ../../content/index.rst:198
 msgid ""
 "Defines the default next state of a ticket after adding a note, in the "
 "additional ITSM field screen of the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、メモ追加後のチケットの"
+"デフォルトの次のステータスを定義します。"
 
 #: ../../content/index.rst:201
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Note"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Note"
 
 #: ../../content/index.rst:202
 msgid ""
 "Allows adding notes in the additional ITSM field screen of the agent "
 "interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、メモを追加できるようにしま"
+"す。"
 
 #: ../../content/index.rst:205
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###NoteMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###NoteMandatory"
 
 #: ../../content/index.rst:206 ../../content/index.rst:351
 msgid ""
@@ -382,37 +407,43 @@ msgstr ""
 
 #: ../../content/index.rst:209
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Subject"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Subject"
 
 #: ../../content/index.rst:210
 msgid ""
 "Defines the default subject of a note in the additional ITSM field screen"
 " of the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、メモのデフォルトの件名を定"
+"義します。"
 
 #: ../../content/index.rst:213
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Body"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Body"
 
 #: ../../content/index.rst:214
 msgid ""
 "Defines the default body of a note in the additional ITSM field screen of"
 " the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、メモのデフォルトの本文を定"
+"義します。"
 
 #: ../../content/index.rst:217
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###InvolvedAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###InvolvedAgent"
 
 #: ../../content/index.rst:218
 msgid ""
 "Shows a list of all the involved agents on this ticket, in the additional"
 " ITSM field screen of the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、このチケットに関与したすべ"
+"ての担当者の一覧を表示します。"
 
 #: ../../content/index.rst:221
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###InformAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###InformAgent"
 
 #: ../../content/index.rst:222
 msgid ""
@@ -420,10 +451,14 @@ msgid ""
 " on the queue/ticket) to determine who should be informed about this "
 "note, in the additional ITSM field screen of the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、このメモについて通知する相"
+"手を決めるため、通知可能なすべての担当者（キュー／チケットに対するメモ権限を"
+"持つすべての担当者）の一覧を表示します。"
 
 #: ../../content/index.rst:225
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###IsVisibleForCustomerDefault"
 msgstr ""
+"Ticket::Frontend::AgentTicketAddtlITSMField###IsVisibleForCustomerDefault"
 
 #: ../../content/index.rst:226 ../../content/index.rst:371
 msgid ""
@@ -435,37 +470,41 @@ msgstr ""
 
 #: ../../content/index.rst:229
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Priority"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Priority"
 
 #: ../../content/index.rst:230
 msgid ""
 "Shows the ticket priority options in the additional ITSM field screen of "
 "the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、チケットの優先度の選択肢を"
+"表示します。"
 
 #: ../../content/index.rst:233
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###PriorityDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###PriorityDefault"
 
 #: ../../content/index.rst:234
 msgid ""
 "Defines the default ticket priority in the additional ITSM field screen "
 "of the agent interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面で、デフォルトのチケットの優先"
+"度を定義します。"
 
 #: ../../content/index.rst:237
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Title"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###Title"
 
 #: ../../content/index.rst:238
 msgid ""
 "Shows the title fields in the additional ITSM field screen of the agent "
 "interface."
-msgstr ""
+msgstr "担当者インタフェースの追加 ITSM フィールド画面で、タイトル欄を表示します。"
 
 #: ../../content/index.rst:241
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###FormDraft"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###FormDraft"
 
 #: ../../content/index.rst:242 ../../content/index.rst:387
 msgid ""
@@ -477,37 +516,43 @@ msgstr ""
 
 #: ../../content/index.rst:245
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###HistoryType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###HistoryType"
 
 #: ../../content/index.rst:246
 msgid ""
 "Defines the history type for the additional ITSM field screen action, "
 "which gets used for ticket history."
 msgstr ""
+"チケット履歴で使用される、追加 ITSM フィールド画面アクションの履歴タイプを定"
+"義します。"
 
 #: ../../content/index.rst:249
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###HistoryComment"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###HistoryComment"
 
 #: ../../content/index.rst:250
 msgid ""
 "Defines the history comment for the additional ITSM field screen action, "
 "which gets used for ticket history."
 msgstr ""
+"チケット履歴で使用される、追加 ITSM フィールド画面アクションの履歴コメントを"
+"定義します。"
 
 #: ../../content/index.rst:253
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###DynamicField"
 
 #: ../../content/index.rst:254
 msgid ""
 "Dynamic fields shown in the additional ITSM field screen of the agent "
 "interface."
 msgstr ""
+"担当者インタフェースの追加 ITSM フィールド画面に表示する"
+"ダイナミックフィールド。"
 
 #: ../../content/index.rst:257
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketAddtlITSMField###ShowIncidentState"
 
 #: ../../content/index.rst:258 ../../content/index.rst:265
 #: ../../content/index.rst:403 ../../content/index.rst:410
@@ -519,18 +564,20 @@ msgid ""
 "Defines if the service incident state should be shown during service "
 "selection in the agent interface."
 msgstr ""
+"担当者インタフェースでサービスを選択する際に、サービスのインシデント状況を表"
+"示するかどうかを定義します。"
 
 #: ../../content/index.rst:261
 msgid "Frontend::Agent::View::TicketClose"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketClose"
 
 #: ../../content/index.rst:264
 msgid "Ticket::Frontend::AgentTicketClose###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketClose###ShowIncidentState"
 
 #: ../../content/index.rst:268
 msgid "Ticket::Frontend::AgentTicketClose###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketClose###DynamicField"
 
 #: ../../content/index.rst:269
 msgid "Dynamic fields shown in the ticket close screen of the agent interface."
@@ -538,11 +585,11 @@ msgstr "担当者インタフェースのチケットクローズ画面に表示
 
 #: ../../content/index.rst:272
 msgid "Frontend::Agent::View::TicketCompose"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketCompose"
 
 #: ../../content/index.rst:275
 msgid "Ticket::Frontend::AgentTicketCompose###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketCompose###DynamicField"
 
 #: ../../content/index.rst:276
 msgid "Dynamic fields shown in the ticket compose screen of the agent interface."
@@ -550,19 +597,19 @@ msgstr "担当者インタフェースのチケット作成画面に表示する
 
 #: ../../content/index.rst:279
 msgid "Frontend::Agent::View::TicketDecision"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketDecision"
 
 #: ../../content/index.rst:282
 msgid "Ticket::Frontend::AgentTicketDecision###Permission"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Permission"
 
 #: ../../content/index.rst:283
 msgid "Required permissions to use the decision screen in the agent interface."
-msgstr ""
+msgstr "担当者インタフェースで決定画面を使用するために必要な権限。"
 
 #: ../../content/index.rst:286
 msgid "Ticket::Frontend::AgentTicketDecision###RequiredLock"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###RequiredLock"
 
 #: ../../content/index.rst:287
 msgid ""
@@ -570,38 +617,45 @@ msgid ""
 "interface (if the ticket isn't locked yet, the ticket gets locked and the"
 " current agent will be set automatically as its owner)."
 msgstr ""
+"担当者インタフェースの決定画面で、チケットロックが必要かどうかを定義します（"
+"チケットがまだロックされていない場合、チケットはロックされ、現在の担当者が自"
+"動的に所有者として設定されます）。"
 
 #: ../../content/index.rst:290
 msgid "Ticket::Frontend::AgentTicketDecision###TicketType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###TicketType"
 
 #: ../../content/index.rst:291
 msgid ""
 "Sets the ticket type in the decision screen of the agent interface "
 "(Ticket::Type needs to be activated)."
 msgstr ""
+"担当者インタフェースの決定画面で、チケットタイプを設定します（Ticket::Type が"
+"有効である必要があります）。"
 
 #: ../../content/index.rst:294
 msgid "Ticket::Frontend::AgentTicketDecision###Service"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Service"
 
 #: ../../content/index.rst:295
 msgid ""
 "Sets the service in the decision screen of the agent interface "
 "(Ticket::Service needs to be activated)."
 msgstr ""
+"担当者インタフェースの決定画面で、サービスを設定します（Ticket::Service が有"
+"効である必要があります）。"
 
 #: ../../content/index.rst:298
 msgid "Ticket::Frontend::AgentTicketDecision###ServiceMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###ServiceMandatory"
 
 #: ../../content/index.rst:302
 msgid "Ticket::Frontend::AgentTicketDecision###SLAMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###SLAMandatory"
 
 #: ../../content/index.rst:306
 msgid "Ticket::Frontend::AgentTicketDecision###Queue"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Queue"
 
 #: ../../content/index.rst:307
 msgid ""
@@ -613,111 +667,119 @@ msgstr ""
 
 #: ../../content/index.rst:310
 msgid "Ticket::Frontend::AgentTicketDecision###QueueMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###QueueMandatory"
 
 #: ../../content/index.rst:314
 msgid "Ticket::Frontend::AgentTicketDecision###Owner"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Owner"
 
 #: ../../content/index.rst:315
 msgid "Sets the ticket owner in the decision screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、チケットの所有者を設定します。"
 
 #: ../../content/index.rst:318
 msgid "Ticket::Frontend::AgentTicketDecision###OwnerMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###OwnerMandatory"
 
 #: ../../content/index.rst:322
 msgid "Ticket::Frontend::AgentTicketDecision###Responsible"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Responsible"
 
 #: ../../content/index.rst:323
 msgid "Sets the ticket responsible in the decision screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、チケットの責任者を設定します。"
 
 #: ../../content/index.rst:326
 msgid "Ticket::Frontend::AgentTicketDecision###ResponsibleMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###ResponsibleMandatory"
 
 #: ../../content/index.rst:330
 msgid "Ticket::Frontend::AgentTicketDecision###State"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###State"
 
 #: ../../content/index.rst:331
 msgid ""
 "If a note is added by an agent, sets the state of a ticket in the "
 "decision screen of the agent interface."
 msgstr ""
+"担当者がメモを追加した場合に、担当者インタフェースの決定画面ででチケットの"
+"ステータスを設定します。"
 
 #: ../../content/index.rst:334
 msgid "Ticket::Frontend::AgentTicketDecision###StateMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###StateMandatory"
 
 #: ../../content/index.rst:338
 msgid "Ticket::Frontend::AgentTicketDecision###StateType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###StateType"
 
 #: ../../content/index.rst:339
 msgid ""
 "Defines the next state of a ticket after adding a note, in the decision "
 "screen of the agent interface."
 msgstr ""
+"担当者インタフェースの決定画面で、メモ追加後のチケットの次のステータスを定義"
+"します。"
 
 #: ../../content/index.rst:342
 msgid "Ticket::Frontend::AgentTicketDecision###StateDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###StateDefault"
 
 #: ../../content/index.rst:343
 msgid ""
 "Defines the default next state of a ticket after adding a note, in the "
 "decision screen of the agent interface."
 msgstr ""
+"担当者インタフェースの決定画面で、メモ追加後のチケットのデフォルトの次の"
+"ステータスを定義します。"
 
 #: ../../content/index.rst:346
 msgid "Ticket::Frontend::AgentTicketDecision###Note"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Note"
 
 #: ../../content/index.rst:347
 msgid "Allows adding notes in the decision screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、メモを追加できるようにします。"
 
 #: ../../content/index.rst:350
 msgid "Ticket::Frontend::AgentTicketDecision###NoteMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###NoteMandatory"
 
 #: ../../content/index.rst:354
 msgid "Ticket::Frontend::AgentTicketDecision###Subject"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Subject"
 
 #: ../../content/index.rst:355
 msgid ""
 "Defines the default subject of a note in the decision screen of the agent"
 " interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、メモのデフォルトの件名を定義します。"
 
 #: ../../content/index.rst:358
 msgid "Ticket::Frontend::AgentTicketDecision###Body"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Body"
 
 #: ../../content/index.rst:359
 msgid ""
 "Defines the default body of a note in the decision screen of the agent "
 "interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、メモのデフォルトの本文を定義します。"
 
 #: ../../content/index.rst:362
 msgid "Ticket::Frontend::AgentTicketDecision###InvolvedAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###InvolvedAgent"
 
 #: ../../content/index.rst:363
 msgid ""
 "Shows a list of all the involved agents on this ticket, in the decision "
 "screen of the agent interface."
 msgstr ""
+"担当者インタフェースの決定画面で、このチケットに関与したすべての担当者の一覧"
+"を表示します。"
 
 #: ../../content/index.rst:366
 msgid "Ticket::Frontend::AgentTicketDecision###InformAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###InformAgent"
 
 #: ../../content/index.rst:367
 msgid ""
@@ -725,74 +787,77 @@ msgid ""
 " on the queue/ticket) to determine who should be informed about this "
 "note, in the decision screen of the agent interface."
 msgstr ""
+"担当者インタフェースの決定画面で、このメモについて通知する相手を決めるため、"
+"通知可能なすべての担当者（キュー／チケットに対するメモ権限を持つすべての担当"
+"者）の一覧を表示します。"
 
 #: ../../content/index.rst:370
 msgid "Ticket::Frontend::AgentTicketDecision###IsVisibleForCustomerDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###IsVisibleForCustomerDefault"
 
 #: ../../content/index.rst:374
 msgid "Ticket::Frontend::AgentTicketDecision###Priority"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Priority"
 
 #: ../../content/index.rst:375
 msgid ""
 "Shows the ticket priority options in the decision screen of the agent "
 "interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、チケットの優先度の選択肢を表示します。"
 
 #: ../../content/index.rst:378
 msgid "Ticket::Frontend::AgentTicketDecision###PriorityDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###PriorityDefault"
 
 #: ../../content/index.rst:379
 msgid ""
 "Defines the default ticket priority in the decision screen of the agent "
 "interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、デフォルトのチケットの優先度を定義します。"
 
 #: ../../content/index.rst:382
 msgid "Ticket::Frontend::AgentTicketDecision###Title"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###Title"
 
 #: ../../content/index.rst:383
 msgid "Shows the title fields in the decision screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面で、タイトル欄を表示します。"
 
 #: ../../content/index.rst:386
 msgid "Ticket::Frontend::AgentTicketDecision###FormDraft"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###FormDraft"
 
 #: ../../content/index.rst:390
 msgid "Ticket::Frontend::AgentTicketDecision###HistoryType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###HistoryType"
 
 #: ../../content/index.rst:391
 msgid ""
 "Defines the history type for the decision screen action, which gets used "
 "for ticket history."
-msgstr ""
+msgstr "チケット履歴で使用される、決定画面アクションの履歴タイプを定義します。"
 
 #: ../../content/index.rst:394
 msgid "Ticket::Frontend::AgentTicketDecision###HistoryComment"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###HistoryComment"
 
 #: ../../content/index.rst:395
 msgid ""
 "Defines the history comment for the decision screen action, which gets "
 "used for ticket history."
-msgstr ""
+msgstr "チケット履歴で使用される、決定画面アクションの履歴コメントを定義します。"
 
 #: ../../content/index.rst:398
 msgid "Ticket::Frontend::AgentTicketDecision###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###DynamicField"
 
 #: ../../content/index.rst:399
 msgid "Dynamic fields shown in the decision screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースの決定画面に表示するダイナミックフィールド。"
 
 #: ../../content/index.rst:402
 msgid "Ticket::Frontend::AgentTicketDecision###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketDecision###ShowIncidentState"
 
 #: ../../content/index.rst:406
 msgid "Frontend::Agent::View::TicketEmailNew"
@@ -800,11 +865,11 @@ msgstr "Frontend::Agent::View::TicketEmailNew"
 
 #: ../../content/index.rst:409
 msgid "Ticket::Frontend::AgentTicketEmail###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketEmail###ShowIncidentState"
 
 #: ../../content/index.rst:413
 msgid "Ticket::Frontend::AgentTicketEmail###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketEmail###DynamicField"
 
 #: ../../content/index.rst:414
 msgid "Dynamic fields shown in the ticket email screen of the agent interface."
@@ -818,31 +883,31 @@ msgstr "Frontend::Agent::View::TicketFreeText"
 
 #: ../../content/index.rst:420
 msgid "Ticket::Frontend::AgentTicketFreeText###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketFreeText###ShowIncidentState"
 
 #: ../../content/index.rst:424
 msgid "Frontend::Agent::View::TicketNote"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketNote"
 
 #: ../../content/index.rst:427
 msgid "Ticket::Frontend::AgentTicketNote###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketNote###ShowIncidentState"
 
 #: ../../content/index.rst:431
 msgid "Frontend::Agent::View::TicketOwner"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketOwner"
 
 #: ../../content/index.rst:434
 msgid "Ticket::Frontend::AgentTicketOwner###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketOwner###ShowIncidentState"
 
 #: ../../content/index.rst:438
 msgid "Frontend::Agent::View::TicketPending"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketPending"
 
 #: ../../content/index.rst:441
 msgid "Ticket::Frontend::AgentTicketPending###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPending###ShowIncidentState"
 
 #: ../../content/index.rst:445
 msgid "Frontend::Agent::View::TicketPhoneNew"
@@ -850,11 +915,11 @@ msgstr "Frontend::Agent::View::TicketPhoneNew"
 
 #: ../../content/index.rst:448
 msgid "Ticket::Frontend::AgentTicketPhone###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPhone###ShowIncidentState"
 
 #: ../../content/index.rst:452
 msgid "Ticket::Frontend::AgentTicketPhone###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPhone###DynamicField"
 
 #: ../../content/index.rst:453
 msgid "Dynamic fields shown in the ticket phone screen of the agent interface."
@@ -862,11 +927,11 @@ msgstr "担当者インタフェースのチケット電話画面に表示する
 
 #: ../../content/index.rst:456
 msgid "Frontend::Agent::View::TicketPrint"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketPrint"
 
 #: ../../content/index.rst:459
 msgid "Ticket::Frontend::AgentTicketPrint###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPrint###DynamicField"
 
 #: ../../content/index.rst:460
 msgid "Dynamic fields shown in the ticket print screen of the agent interface."
@@ -874,15 +939,15 @@ msgstr "担当者インターフェイスのチケット印刷画面に表示す
 
 #: ../../content/index.rst:463
 msgid "Frontend::Agent::View::TicketPriority"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketPriority"
 
 #: ../../content/index.rst:466
 msgid "Ticket::Frontend::AgentTicketPriority###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPriority###ShowIncidentState"
 
 #: ../../content/index.rst:470
 msgid "Ticket::Frontend::AgentTicketPriority###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPriority###DynamicField"
 
 #: ../../content/index.rst:471
 msgid "Dynamic fields shown in the ticket priority screen of the agent interface."
@@ -890,39 +955,43 @@ msgstr "担当者インタフェースのチケット優先度画面に表示す
 
 #: ../../content/index.rst:474
 msgid "Ticket::Frontend::AgentTicketPriority###TicketType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPriority###TicketType"
 
 #: ../../content/index.rst:475
 msgid ""
 "Sets the ticket type in the ticket priority screen of a zoomed ticket in "
 "the agent interface (Ticket::Type needs to be activated)."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット優先度画面で、"
+"チケットタイプを設定します（Ticket::Type が有効である必要があります）。"
 
 #: ../../content/index.rst:478
 msgid "Ticket::Frontend::AgentTicketPriority###Service"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketPriority###Service"
 
 #: ../../content/index.rst:479
 msgid ""
 "Sets the service in the ticket priority screen of a zoomed ticket in the "
 "agent interface (Ticket::Service needs to be activated)."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット優先度画面で、サービスを"
+"設定します（Ticket::Service が有効である必要があります）。"
 
 #: ../../content/index.rst:482
 msgid "Frontend::Agent::View::TicketResponsible"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketResponsible"
 
 #: ../../content/index.rst:485
 msgid "Ticket::Frontend::AgentTicketResponsible###ShowIncidentState"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketResponsible###ShowIncidentState"
 
 #: ../../content/index.rst:489
 msgid "Frontend::Agent::View::TicketSearch"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketSearch"
 
 #: ../../content/index.rst:492
 msgid "Ticket::Frontend::AgentTicketSearch###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketSearch###DynamicField"
 
 #: ../../content/index.rst:493
 msgid "Dynamic fields shown in the ticket search screen of the agent interface."
@@ -934,35 +1003,39 @@ msgstr "Frontend::Agent::View::TicketZoom"
 
 #: ../../content/index.rst:499
 msgid "Ticket::Frontend::AgentTicketZoom###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketZoom###DynamicField"
 
 #: ../../content/index.rst:500
 msgid "Dynamic fields shown in the ticket zoom screen of the agent interface."
-msgstr ""
+msgstr "担当者インタフェースのチケットズーム画面に表示するダイナミックフィールド。"
 
 #: ../../content/index.rst:503
 msgid "Frontend::Agent::View::TicketZoom::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketZoom::MenuModule"
 
 #: ../../content/index.rst:506
 msgid "Ticket::Frontend::MenuModule###315-AddtlITSMField"
-msgstr ""
+msgstr "Ticket::Frontend::MenuModule###315-AddtlITSMField"
 
 #: ../../content/index.rst:507
 msgid ""
 "Shows a link in the menu to modify additional ITSM fields in the ticket "
 "zoom view of the agent interface."
 msgstr ""
+"担当者インタフェースのチケットズームビューで、追加 ITSM フィールドを変更する"
+"ためのリンクをメニューに表示します。"
 
 #: ../../content/index.rst:510
 msgid "Ticket::Frontend::MenuModule###420-Decision"
-msgstr ""
+msgstr "Ticket::Frontend::MenuModule###420-Decision"
 
 #: ../../content/index.rst:511
 msgid ""
 "Shows a link in the menu to change the decision of a ticket in its zoom "
 "view of the agent interface."
 msgstr ""
+"担当者インタフェースのチケットズームビューで、チケットの決定を変更するための"
+"リンクをメニューに表示します。"
 
 #: ../../content/index.rst:514
 msgid "Frontend::Base::OutputFilter"
@@ -970,21 +1043,21 @@ msgstr "Frontend::Base::OutputFilter"
 
 #: ../../content/index.rst:517
 msgid "Frontend::Output::FilterElementPost###ITSMIncidentProblemManagement"
-msgstr ""
+msgstr "Frontend::Output::FilterElementPost###ITSMIncidentProblemManagement"
 
 #: ../../content/index.rst:518
 msgid ""
 "Modifies the display order of the dynamic field ITSMImpact and other "
 "things."
-msgstr ""
+msgstr "ダイナミックフィールド ITSMImpact の表示順序などを変更します。"
 
 #: ../../content/index.rst:521
 msgid "Frontend::Customer::View::TicketPrint"
-msgstr ""
+msgstr "Frontend::Customer::View::TicketPrint"
 
 #: ../../content/index.rst:524
 msgid "Ticket::Frontend::CustomerTicketPrint###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::CustomerTicketPrint###DynamicField"
 
 #: ../../content/index.rst:525
 msgid "Dynamic fields shown in the ticket print screen of the customer interface."
@@ -992,11 +1065,11 @@ msgstr "顧客インタフェースのチケット印刷画面に表示するダ
 
 #: ../../content/index.rst:528
 msgid "Frontend::Customer::View::TicketZoom"
-msgstr ""
+msgstr "Frontend::Customer::View::TicketZoom"
 
 #: ../../content/index.rst:531
 msgid "Ticket::Frontend::CustomerTicketZoom###DynamicField"
-msgstr ""
+msgstr "Ticket::Frontend::CustomerTicketZoom###DynamicField"
 
 #: ../../content/index.rst:532
 msgid "Dynamic fields shown in the ticket zoom screen of the customer interface."
