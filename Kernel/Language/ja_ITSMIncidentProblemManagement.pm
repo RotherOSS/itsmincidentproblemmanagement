@@ -28,7 +28,7 @@ sub Data {
     $Self->{Translation}->{'Impact'} = '影響度';
 
     # JS Template: ServiceIncidentState
-    $Self->{Translation}->{'Service Incident State'} = 'サービスインシデント状況';
+    $Self->{Translation}->{'Service Incident State'} = 'サービス・インシデント状況';
 
     # Perl Module: Kernel/Output/HTML/FilterElementPost/ITSMIncidentProblemManagement.pm
     $Self->{Translation}->{'Change Decision of %s%s%s'} = '%s%s%sの決定を変更';
@@ -62,7 +62,7 @@ sub Data {
     $Self->{Translation}->{'Change the ITSM fields!'} = 'ITSM項目を変更する！';
     $Self->{Translation}->{'Decision'} = '決定';
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'ダイナミックフィールド画面インタフェースを介して、このパッケージのアクションに割り当てることができるダイナミックフィールドのオブジェクトタイプの一覧を定義します。';
     $Self->{Translation}->{'Defines if a ticket lock is required in the additional ITSM field screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
         '担当者 インターフェイスの ITSM フィールド画面でチケット ロックが必要かどうかを定義します。 (チケットがまだロックされていない場合、チケットはロックされ、現在の担当者がその所有者として自動的に設定されます。)';
     $Self->{Translation}->{'Defines if a ticket lock is required in the decision screen of the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
