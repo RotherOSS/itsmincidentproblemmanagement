@@ -2,7 +2,7 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+// Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -41,7 +41,7 @@ ITSM.Agent.ITSMIncidentProblemManagement = (function (TargetNS) {
         Data.Action = 'AgentITSMIncidentProblemManagement';
         Data.Subaction = 'GetServiceIncidentState';
 
-        Core.AJAX.FunctionCall(Core.Config.Get('Baselink'), Data, function (Response) {
+        Core.AJAX.FunctionCall(Core.Config.Get('Baselink'), Data, function (Response) { // eslint-disable-line no-undef
 
             // if a service was selected and an incident state was found
             if (Response.CurInciSignal) {
@@ -79,11 +79,11 @@ ITSM.Agent.ITSMIncidentProblemManagement = (function (TargetNS) {
     TargetNS.Init = function() {
 
         // load template for incident state and signal and attach at to the DOM after the service
-        var ServiceIncidentStateHTML = Core.Template.Render('Agent/ITSMIncidentProblemManagement/ServiceIncidentState'),
-            ActionShowIncidentState = Core.Config.Get('Action') + 'ShowIncidentState';
+        var ServiceIncidentStateHTML = Core.Template.Render('Agent/ITSMIncidentProblemManagement/ServiceIncidentState'), // eslint-disable-line no-undef
+            ActionShowIncidentState = Core.Config.Get('Action') + 'ShowIncidentState'; // eslint-disable-line no-undef
 
         // Show Service Incident State if config is enabled.
-        if (Core.Config.Get(ActionShowIncidentState)) {
+        if (Core.Config.Get(ActionShowIncidentState)) { // eslint-disable-line no-undef
 
             // insert template to page
             $(ServiceIncidentStateHTML).insertBefore($('label[for=SLAID]'));
@@ -111,12 +111,12 @@ ITSM.Agent.ITSMIncidentProblemManagement = (function (TargetNS) {
 
         // open some links as pop up
         $('a.AsPopup').on('click', function () {
-            Core.UI.Popup.OpenPopup($(this).attr('href'), 'Action');
+            Core.UI.Popup.OpenPopup($(this).attr('href'), 'Action'); // eslint-disable-line no-undef
             return false;
         });
     };
 
-    Core.Init.RegisterNamespace(TargetNS, 'APP_MODULE');
+    Core.Init.RegisterNamespace(TargetNS, 'APP_MODULE'); // eslint-disable-line no-undef
 
     return TargetNS;
 }(ITSM.Agent.ITSMIncidentProblemManagement || {}));
