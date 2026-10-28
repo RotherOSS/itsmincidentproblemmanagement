@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # $origin: otobo - 0ad48f278324b4dea38544c8437be9bc22e7f110 - scripts/test/Selenium/Agent/AgentTicketActionCommonACL.t
 # --
@@ -313,9 +313,9 @@ END_CONTENT
         # Create some test services.
         my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # Get the list of service types from general catalog.
         my $ServiceTypeList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
             Class => 'ITSM::Service::Type',
@@ -332,7 +332,7 @@ END_CONTENT
         # Build a lookup hash.
         my %SLATypeName2ID = reverse %{$SLATypeList};
 
-        # ---
+# ---
 
         my $ServiceID;
         my @ServiceIDs;
@@ -340,13 +340,13 @@ END_CONTENT
             my $ServiceID = $ServiceObject->ServiceAdd(
                 Name    => "UT Test Service $Count $RandomID",
 
-                # ---
-                # ITSMIncidentProblemManagement
-                # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
                 TypeID      => $ServiceTypeName2ID{Training},
                 Criticality => '3 normal',
 
-                # ---
+# ---
                 ValidID => 1,
                 UserID  => 1,
                 Comment => "test script: $0",
@@ -372,12 +372,12 @@ END_CONTENT
                 ServiceIDs => \@ServiceIDs,
                 Name       => "UT Test SLA $Count $RandomID",
 
-                # ---
-                # ITSMIncidentProblemManagement
-                # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
                 TypeID => $SLATypeName2ID{Other},
 
-                # ---
+# ---
                 ValidID => 1,
                 UserID  => 1,
             );
@@ -683,9 +683,9 @@ END_CONTENT
         ok( $Success, "Deleted service relations for $CustomerUserLogin" );
         for my $ServiceID (@ServiceIDs) {
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             # Clean up servica data.
             $Success = $DBObject->Do(
                 SQL  => "DELETE FROM service_preferences WHERE service_id = ?",
@@ -696,7 +696,7 @@ END_CONTENT
                 "ServicePreferences is deleted - ID $ServiceID",
             );
 
-            # ---
+# ---
             $Success = $DBObject->Do(
                 SQL  => "DELETE FROM service WHERE ID = ?",
                 Bind => [ \$ServiceID ],

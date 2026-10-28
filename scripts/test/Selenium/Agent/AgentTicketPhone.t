@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # $origin: otobo - 4cdd2f2766468573cc2970dfbd38a6c9781f0bd0 - scripts/test/Selenium/Agent/AgentTicketPhone.t
 # --
@@ -67,9 +67,9 @@ $Selenium->RunTest(
             Value => 0,
         );
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
 
         $Helper->ConfigSettingChange(
             Valid => 1,
@@ -81,44 +81,44 @@ $Selenium->RunTest(
             },
         );
 
-        # ---
+# ---
 
         # Do not check service and type.
         $Helper->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Service',
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             #            Value => 0,
             Value => 1,
 
-            # ---
+# ---
         );
         $Helper->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Type',
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             #            Value => 0,
             Value => 1,
 
-            # ---
+# ---
         );
 
         # Create test user.
         my $TestUserLogin = $Helper->TestUserCreate(
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             #            Groups => [ 'admin', 'users' ],
             Groups => [ 'admin', 'users', 'itsm-service' ],
 
-            # ---
+# ---
         ) || die "Did not get test user";
 
         # Get test user ID.
@@ -193,12 +193,12 @@ $Selenium->RunTest(
             qw(FromCustomer CustomerID Dest Subject RichText FileUpload
             NextStateID PriorityID submitRichText)
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             , qw(TypeID ServiceID OptionLinkTicket DynamicField_ITSMImpact DynamicField_ITSMCriticality)
 
-            # ---
+# ---
             )
         {
             my $Element = $Selenium->find_element( "#$ID", 'css' );
@@ -227,9 +227,9 @@ $Selenium->RunTest(
         my $TicketSubject = "Selenium Ticket";
         my $TicketBody    = "Selenium body test";
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
 
         # Create test service.
@@ -266,14 +266,14 @@ $Selenium->RunTest(
         );
         $Selenium->WaitFor( JavaScript => 'return typeof($) === "function" && !$(".AJAXLoader:visible").length' );
 
-        # ---
+# ---
         $Selenium->find_element( "#FromCustomer", 'css' )->send_keys($TestCustomer);
         $Selenium->WaitFor( JavaScript => 'return typeof($) === "function" && $("li.ui-menu-item:visible").length;' );
         $Selenium->execute_script("\$('li.ui-menu-item:contains($TestCustomer)').click();");
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
 
         $Selenium->WaitFor( JavaScript => "return \$('#ServiceID option[value=\"$ServiceID\"]').length;" );
         $Selenium->execute_script("\$('#ServiceID').val('$ServiceID').trigger('redraw.InputField').trigger('change');");
@@ -313,7 +313,7 @@ $Selenium->RunTest(
             "#PriorityID updated value",
         );
 
-        # ---
+# ---
         $Selenium->InputFieldValueSet(
             Element => '#Dest',
             Value   => '2||Raw',
@@ -431,9 +431,9 @@ $Selenium->RunTest(
             "$TestCustomer found on page",
         ) || die "$TestCustomer not found on page";
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # Force sub menus to be visible in order to be able to click one of the links.
         $Selenium->execute_script("\$('.Cluster ul ul').addClass('ForceVisible');");
 
@@ -455,7 +455,7 @@ $Selenium->RunTest(
             );
         }
 
-        # ---
+# ---
 
         # Test bug #12229.
         my $QueueID1 = $Kernel::OM->Get('Kernel::System::Queue')->QueueAdd(
@@ -535,9 +535,9 @@ $Selenium->RunTest(
             'Queue #2 is selected.',
         );
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # Verify Service Incident State is not available when config 'Ticket::Frontend::AgentTicketPhone###ShowIncidentState'
         #   is disabled. See bug#14150 (https://bugs.otobo.org/show_bug.cgi?id=14150)
         $Helper->ConfigSettingChange(
@@ -558,7 +558,7 @@ $Selenium->RunTest(
             "Service Incident State is not available when config ShowIncidentState is disabled."
         );
 
-        # ---
+# ---
         # Delete Queues.
         $Success = $Kernel::OM->Get('Kernel::System::DB')->Do(
             SQL  => "DELETE FROM queue WHERE id IN (?, ?)",
@@ -588,9 +588,9 @@ $Selenium->RunTest(
             "Ticket with ticket ID $TicketID is deleted.",
         );
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # Delete test service - test customer connection.
         $Success = $Kernel::OM->Get('Kernel::System::DB')->Do(
             SQL => "DELETE FROM service_customer_user WHERE service_id = $ServiceID",
@@ -618,7 +618,7 @@ $Selenium->RunTest(
             "Service is deleted - ID $ServiceID",
         );
 
-        # ---
+# ---
 
         # Delete created test customer user.
         my $DBObject = $Kernel::OM->Get('Kernel::System::DB');

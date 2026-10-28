@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # $origin: otobo - 4cdd2f2766468573cc2970dfbd38a6c9781f0bd0 - scripts/test/Selenium/Agent/AgentTicketEmail.t
 # --
@@ -55,25 +55,25 @@ $Selenium->RunTest(
             Valid => 1,
             Key   => 'Ticket::Service',
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             #            Value => 0,
             Value => 1,
 
-            # ---
+# ---
         );
         $Helper->ConfigSettingChange(
             Valid => 1,
             Key   => 'Ticket::Type',
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             #            Value => 0,
             Value => 1,
 
-            # ---
+# ---
         );
 
         # Enable session management use html cookies.
@@ -161,13 +161,13 @@ $Selenium->RunTest(
         # Create test user and login.
         my $TestUserLogin = $Helper->TestUserCreate(
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             #            Groups => [ 'admin', 'users' ],
             Groups => [ 'admin', 'users', 'itsm-service' ],
 
-            # ---
+# ---
         ) || die "Did not get test user";
 
         $Selenium->Login(
@@ -186,12 +186,12 @@ $Selenium->RunTest(
             qw(Dest ToCustomer CcCustomer BccCustomer CustomerID RichText
             Signature FileUpload NextStateID PriorityID submitRichText)
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             , qw(TypeID ServiceID OptionLinkTicket DynamicField_ITSMImpact)
 
-            # ---
+# ---
             )
         {
             my $Element = $Selenium->find_element( "#$ID", 'css' );
@@ -233,9 +233,9 @@ $Selenium->RunTest(
             "Signature is found with no replaced tags"
         );
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # get service object
         my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
 
@@ -267,7 +267,7 @@ $Selenium->RunTest(
             UserID            => $TestUserID,
         );
 
-        # ---
+# ---
 
         # Select customer user.
         $Selenium->find_element( "#ToCustomer", 'css' )->clear();
@@ -348,9 +348,9 @@ $Selenium->RunTest(
             "Signature is found with replaced tags on selected customer change"
         );
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         $Selenium->execute_script(
             "\$('#TypeID').val(\$('#TypeID option').filter(function () { return \$(this).html() == 'Unclassified'; } ).val() ).trigger('redraw.InputField').trigger('change');"
         );
@@ -387,7 +387,7 @@ $Selenium->RunTest(
             "#PriorityID updated value",
         );
 
-        # ---
+# ---
 
         # Submit form.
         $Selenium->find_element( "#submitRichText", 'css' )->VerifiedClick();
@@ -432,9 +432,9 @@ $Selenium->RunTest(
             "Signature found on page"
         ) || die "$SignatureText not found on page";
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # Navigate to AgentTicketHistory screen.
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentTicketHistory;TicketID=$TicketID");
 
@@ -446,7 +446,7 @@ $Selenium->RunTest(
             );
         }
 
-        # ---
+# ---
 
         # Disable session management use html cookies to check signature update (see bug#12890).
         $Helper->ConfigSettingChange(
@@ -512,9 +512,9 @@ $Selenium->RunTest(
             "Ticket with ticket ID $TicketID is deleted",
         );
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # delete test service - test customer connection
         $Success = $Kernel::OM->Get('Kernel::System::DB')->Do(
             SQL => "DELETE FROM service_customer_user WHERE service_id = $ServiceID",
@@ -542,7 +542,7 @@ $Selenium->RunTest(
             "Service is deleted - ID $ServiceID",
         );
 
-        # ---
+# ---
 
         # Delete created test customer users.
         my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
@@ -585,13 +585,13 @@ $Selenium->RunTest(
         my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
 
         # Make sure the cache is correct.
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         #        for my $Cache (qw (Ticket CustomerUser)) {
         for my $Cache (qw (Ticket CustomerUser Service)) {
 
-            # ---
+# ---
             $CacheObject->CleanUp( Type => $Cache );
         }
 
