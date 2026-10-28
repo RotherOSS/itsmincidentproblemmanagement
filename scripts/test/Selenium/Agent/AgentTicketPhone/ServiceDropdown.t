@@ -2,7 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2021 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# --
+# $origin: otobo - 18b3c3a4e9f23ea1b968aac033aa4ecf3c691b61 - scripts/test/Selenium/Agent/AgentTicketPhone/ServiceDropdown.t
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -101,13 +103,13 @@ $Selenium->RunTest(
             Comment => 'Selenium Test Service',
             ValidID => 1,
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             TypeID      => 1,
             Criticality => '3 normal',
 
-            # ---
+# ---
             UserID => 1,
         );
 

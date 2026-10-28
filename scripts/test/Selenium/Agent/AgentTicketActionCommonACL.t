@@ -2,7 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2021 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# --
+# $origin: otobo - 18b3c3a4e9f23ea1b968aac033aa4ecf3c691b61 - scripts/test/Selenium/Agent/AgentTicketActionCommonACL.t
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -316,9 +318,9 @@ EOF
         # Create some test services.
         my $ServiceObject = $Kernel::OM->Get('Kernel::System::Service');
 
-        # ---
-        # ITSMIncidentProblemManagement
-        # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
         # Get the list of service types from general catalog.
         my $ServiceTypeList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
             Class => 'ITSM::Service::Type',
@@ -335,7 +337,7 @@ EOF
         # Build a lookup hash.
         my %SLATypeName2ID = reverse %{$SLATypeList};
 
-        # ---
+# ---
 
         my $ServiceID;
         my @Services;
@@ -343,13 +345,13 @@ EOF
             $ServiceID = $ServiceObject->ServiceAdd(
                 Name => "UT Test Service $Count $RandomID",
 
-                # ---
-                # ITSMIncidentProblemManagement
-                # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
                 TypeID      => $ServiceTypeName2ID{Training},
                 Criticality => '3 normal',
 
-                # ---
+# ---
                 ValidID => 1,
                 UserID  => 1,
             );
@@ -377,12 +379,12 @@ EOF
                 ServiceIDs => \@Services,
                 Name       => "UT Test SLA $Count $RandomID",
 
-                # ---
-                # ITSMIncidentProblemManagement
-                # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
                 TypeID => $SLATypeName2ID{Other},
 
-                # ---
+# ---
                 ValidID => 1,
                 UserID  => 1,
             );
@@ -710,9 +712,9 @@ EOF
         );
         for my $ServiceID (@Services) {
 
-            # ---
-            # ITSMIncidentProblemManagement
-            # ---
+# ---
+# ITSMIncidentProblemManagement
+# ---
             # Clean up servica data.
             $Success = $DBObject->Do(
                 SQL  => "DELETE FROM service_preferences WHERE service_id = ?",
@@ -723,7 +725,7 @@ EOF
                 "ServicePreferences is deleted - ID $ServiceID",
             );
 
-            # ---
+# ---
             $Success = $DBObject->Do(
                 SQL  => "DELETE FROM service WHERE ID = ?",
                 Bind => [ \$ServiceID ],
