@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 09:56+0200\n"
-"PO-Revision-Date: 2026-11-02 17:41+0000\n"
-"Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
+"PO-Revision-Date: 2026-11-11 09:00+0000\n"
+"Last-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "manuals/itsmincidentproblemmanagement-documentation/de/>\n"
 "Language: de\n"
@@ -63,11 +63,11 @@ msgstr "\\-"
 
 #: ../../content/index.rst:38
 msgid "Usage"
-msgstr "Verwendung"
+msgstr "Benutzung"
 
 #: ../../content/index.rst:41
 msgid "Setup"
-msgstr "Einrichtung"
+msgstr "Setup"
 
 #: ../../content/index.rst:44
 msgid "Configuration Reference"
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../../content/index.rst:154 ../../content/index.rst:299
 msgid "Sets if service must be selected by the agent."
-msgstr ""
+msgstr "Legt fest, ob der Service vom Agenten ausgewählt werden muss."
 
 #: ../../content/index.rst:157
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###SLAMandatory"
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../content/index.rst:158 ../../content/index.rst:303
 msgid "Sets if SLA must be selected by the agent."
-msgstr ""
+msgstr "Legt fest, ob die SLA vom Agenten ausgewählt werden muss."
 
 #: ../../content/index.rst:161
 msgid "Ticket::Frontend::AgentTicketAddtlITSMField###Queue"
